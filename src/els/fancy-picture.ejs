@@ -1,0 +1,14 @@
+<a class="<%=gallery%>" data-fancybox="gallery" data-src="#<%=src%>">
+    <%- include('./img', {
+        src, 
+        cx,
+        lazyCx
+    }); %>
+    <div id="<%=src%>" class="dn">
+        <%- include('./img', {
+            src: src+"-big", 
+            cx: "fancy-picture-"+or,
+            lazyCx
+        }); %>
+    </div>
+</a>
