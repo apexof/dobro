@@ -1,10 +1,11 @@
-.products-grid{
+.products-grid{    
     &__title{
         margin-bottom: 15px;
     }
     &__list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -12,14 +13,14 @@
 
 }
 @media (min-width: 768px) {
-
-}
-@media (min-width: 992px) {
     .products-grid{
         &__list{
             margin: 0 -10px -15px;
         }
     }
+}
+@media (min-width: 992px) {
+
 }
 @media (min-width: 1200px) {
 

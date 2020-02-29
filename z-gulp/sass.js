@@ -1,12 +1,12 @@
 const gulp = require("gulp");
 const $ = require("gulp-load-plugins")();
-const newProducts = require("./ejs/newProducts");
+const products = require("./ejs/products");
 
 const { dest, src, task } = gulp;
 
 task("ejs", () => src("./src/index.ejs")
     .pipe($.ejs({
-        ext: "jpg", or: "portrait", newProducts, lazyCx: "lazy"
+        ext: "jpg", or: "portrait", products, lazyCx: "lazy"
     }))
     .pipe($.rename({ extname: ".html" }))
     .pipe($.htmlhint())

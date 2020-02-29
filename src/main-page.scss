@@ -1,14 +1,20 @@
 .main-page{
-
+    .cat-menu{
+    }
+    .help-info{
+        margin-top: 35px;    
+    }
+    .products-grid{
+        margin-top: 35px;
+    }
+    .new-products{
+    }
 }
 
 @media (min-width: 576px) {
 
 }
 @media (min-width: 768px) {
-
-}
-@media (min-width: 992px) {
     .main-page{
         .cat-menu{
             margin-top: 30px;
@@ -20,6 +26,9 @@
             margin-bottom: 35px;
         }
     }
+}
+@media (min-width: 992px) {
+
 }
 @media (min-width: 1200px) {
 

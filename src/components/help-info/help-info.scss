@@ -11,6 +11,7 @@
             img{
                 max-width: 100%;
                 display: block;
+                margin: 0 auto;
             }
         }
         &-text{
@@ -18,7 +19,7 @@
                 margin: 35px 0 20px;
                 text-align: left;
             }
-            div{
+            .help-info__desc{
                 font-size: 14px;
                 line-height: 17px;
                 color: #000000;
@@ -27,6 +28,8 @@
             }
             .btn{
                 width: 100%;
+                max-width: 257px;
+                margin: 0 auto;
             }
         }
     }
@@ -36,10 +39,6 @@
 
 }
 @media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
     .help-info{
         &__list{
             margin-top: 40px;
@@ -55,18 +54,25 @@
             +.help-info__block{
                 margin-top: 60px;
             }
-            &-text{
-                padding-left: 105px;
-                width: 50%;
-                h2{
-                    max-width: 455px;
+            &-img{
+                img{         
                     margin: 0;
                 }
-                div{
+            }
+            &-text{
+                width: 50%;
+                &-container{
+                    margin: 0 auto;
+                    max-width: 300px;
+                }
+                h2{
+                    margin: 0;
+                }
+                .help-info__desc{
                     max-width: 404px;
                 }
-                .btn{
-                    max-width: 257px;
+                .btn{     
+                    margin: 0;               
                 }
             }
             &-img{
@@ -76,6 +82,26 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
+    .help-info{
+        &__block{
+            &-text{        
+                &-container{
+                    max-width: 350px;
+                }
+            }
+        }
+    }
+}
 
+@media (min-width: 1200px) {
+    .help-info{
+        &__block{
+            &-text{        
+                &-container{
+                    max-width: 455px;
+                }
+            }
+        }
+    }
 }
