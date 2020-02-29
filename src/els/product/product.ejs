@@ -1,0 +1,49 @@
+<div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <img src=<%=img%> alt="">
+        </div>
+        <div class="product__rating">
+            <div class="product__rating-stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a class="product__rating-count">
+                1
+            </a>
+            <div class="product__rating-icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </div>
+            <div class="product__rating-icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </div>
+        </div>
+        <% if (inStock) { %>
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        <% } %>
+        <% if (!inStock) { %>
+        <div class="product__in-stock product__in-stock_false">
+            Нет в наличии
+        </div>
+        <% } %>
+        <div class="product__name">
+            <%=name%>
+        </div>
+        <div class="product__price">
+            <div class="product__price-current">
+                <%=price%> Р
+            </div>
+            <div class="product__price-old">
+                <%=oldPrice%> Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

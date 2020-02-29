@@ -22,7 +22,7 @@ task("serve", () => {
 
 task("watch", () => {
     watch("./src/**/*.scss", series("sass"));
-    watch("./src/**/*.ejs", series("ejs", "ejs-modals"));
+    watch("./src/**/*.ejs", series("ejs"));
     watch("./src/**/*.js", series("js"))
         .on("unlink", (filepath) => {
             $.remember.forget("js", path.resolve(filepath));

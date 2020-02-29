@@ -1,13 +1,12 @@
 const gulp = require("gulp");
 const $ = require("gulp-load-plugins")();
-const projects = require("./ejs/projects.js");
-const techs = require("./ejs/techs.js");
+const newProducts = require("./ejs/newProducts");
 
 const { dest, src, task } = gulp;
 
 task("ejs", () => src("./src/index.ejs")
     .pipe($.ejs({
-        ext: "jpg", or: "portrait", projects, techs, lazyCx: "lazy"
+        ext: "jpg", or: "portrait", newProducts, lazyCx: "lazy"
     }))
     .pipe($.rename({ extname: ".html" }))
     .pipe($.htmlhint())
@@ -15,22 +14,9 @@ task("ejs", () => src("./src/index.ejs")
     .pipe($.htmlmin({ collapseWhitespace: true }))
     .pipe(dest("./build")));
 
-task("ejs-modals", () => src("./src/components/modals/**/*.ejs")
-    .pipe($.rename({ dirname: "" }))
-    .pipe($.ejs({
-        ext: "jpg", or: "landscape", lazyCx: "lazy"
-    }))
-    .pipe($.rename({ extname: ".html" }))
-    .pipe($.htmlmin({ collapseWhitespace: true }))
-    .pipe(dest("./build/modals")));
-
 task("sass", () => src("./src/**/*.scss")
     .pipe($.cached("sass"))
     .pipe($.sass())
-    // .pipe($.purgecss({
-    //     content: ["./build/index.html"]
-    //     // rejected: true
-    // }))
     .pipe($.autoprefixer())
     .pipe($.shorthand())
     .pipe($.csso())

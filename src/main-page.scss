@@ -1,0 +1,26 @@
+.main-page{
+
+}
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+    .main-page{
+        .cat-menu{
+            margin-top: 30px;
+        }
+        .products-grid{
+            margin-top: 15px;
+        }
+        .new-products{
+            margin-bottom: 35px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+
+}
