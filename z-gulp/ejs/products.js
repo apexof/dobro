@@ -8,7 +8,7 @@ module.exports = {
             rating: 5,
             weight: "200",
             count: "16",
-            img: "./img/newProduct-1.jpg"
+            img: "newProduct-1"
         },
         {
             name: "Ролл Цезарь курица 210г",
@@ -16,7 +16,7 @@ module.exports = {
             oldPrice: "299",
             inStock: false,
             rating: 5,
-            img: "./img/newProduct-2.jpg"
+            img: "newProduct-2"
         },
         {
             name: "Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт",
@@ -24,7 +24,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/newProduct-3.jpg"
+            img: "newProduct-3"
         },
         {
             name: "Вафли КОРОВКА топл молоко 150гр",
@@ -32,7 +32,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/newProduct-4.jpg"
+            img: "newProduct-4"
         },
         {
             name: "Крекер ТУК сыр 100гр",
@@ -40,7 +40,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/newProduct-5.jpg"
+            img: "newProduct-5"
         },
         {
             name: "Чипсы ЛЕЙС рифлен сметана/лук 150гр",
@@ -48,7 +48,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/newProduct-6.jpg"
+            img: "newProduct-6"
         },
         {
             name: "Пюре АГУША ябл/банан ст/б 115гр",
@@ -56,7 +56,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/newProduct-7.jpg"
+            img: "newProduct-7"
         },
         {
             name: "Сок БЛ виноград осв 0,2л",
@@ -64,7 +64,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/newProduct-8.jpg"
+            img: "newProduct-8"
         }
     ],
     interestingProducts: [
@@ -76,7 +76,7 @@ module.exports = {
             rating: 5,
             weight: "200",
             count: "16",
-            img: "./img/interesting-products-1.jpg"
+            img: "interesting-products-1"
         },
         {
             name: "Крупа МИСТРАЛЬ гречневая 900гр",
@@ -84,7 +84,7 @@ module.exports = {
             oldPrice: "299",
             inStock: false,
             rating: 5,
-            img: "./img/interesting-products-2.jpg"
+            img: "interesting-products-2"
         },
         {
             name: "Фундук чищен /40кг",
@@ -92,7 +92,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/interesting-products-3.jpg"
+            img: "interesting-products-3"
         },
         {
             name: "Фунчоза ЧИМ ЧИМ бобовая 200гр/18шт",
@@ -100,7 +100,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/interesting-products-4.jpg"
+            img: "interesting-products-4"
         },
         {
             name: "Овощи зам ВИТАМИН карибская смесь 400гр",
@@ -108,7 +108,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/interesting-products-5.jpg"
+            img: "interesting-products-5"
         },
         {
             name: "Кофе МАХМУД Капучино пак",
@@ -116,7 +116,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/interesting-products-6.jpg"
+            img: "interesting-products-6"
         },
         {
             name: "Виноград черный",
@@ -124,7 +124,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/interesting-products-7.jpg"
+            img: "interesting-products-7"
         },
         {
             name: "Арбуз",
@@ -132,7 +132,7 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "./img/interesting-products-8.jpg"
+            img: "interesting-products-8"
         }
     ]
 };
