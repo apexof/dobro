@@ -1,3 +1,5 @@
+@import "./vars.scss";
+
 * {
     box-sizing: border-box;
 }
@@ -25,14 +27,34 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+.no-scroll-bar{
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+        color: fff;
+        height: 0;
+   }
+   &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
+
 .page{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100%;
     .container {
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: $mobilePadding;
+        padding-left: $mobilePadding;
         @media (min-width: 576px) {
             max-width: unset;
         }
@@ -45,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
             padding-left: 40px;
         }
         @media (min-width: 1200px) {
-            max-width: 1200px;
+            max-width: 1320px;
             padding-right: 60px;
             padding-left: 60px;            
         }

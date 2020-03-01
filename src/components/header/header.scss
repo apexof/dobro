@@ -1,10 +1,12 @@
+@import "../../vars.scss";
+
 .header {  
     &_desktop{
         display: none;
     }
     &_mobile{
         display: block;
-        margin: 0 -20px;
+        margin: 0 -#{$mobilePadding};
     }
     &__tel{
         display: flex;
@@ -42,8 +44,8 @@
     }
     &__line{
         display: flex;
-        justify-content: space-around;
-        padding: 8px 0;
+        justify-content: space-between;
+        padding: 8px $mobilePadding;
         align-items: center;
         border-bottom: 1px solid #EEEEEE;
         &-el{            
@@ -56,11 +58,28 @@
         }
         &:last-child{
             justify-content: space-between;
-            padding: 16px 10px;
+            padding: 16px $mobilePadding;
+        }
+        &:nth-child(2){
+            justify-content: start;
+            .header__line-el{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                +.header__line-el{
+                    margin-left: 15px;
+                    &.search-icon{
+                        margin-left: auto;
+                    }
+                }
+            }
         }
     }
     .separator{
         border-left: 1px solid #C1C1C1;
+        height: 24px;
+        margin: 0 auto;
     }
     &__link{
         color: #000;

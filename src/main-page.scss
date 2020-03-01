@@ -1,13 +1,20 @@
 .main-page{
+    .main-menu-grid{
+        margin-top: 10px;
+    }
     .cat-menu{
+        margin-top: 10px;
     }
     .help-info{
         margin-top: 35px;    
     }
     .products-grid{
-        margin-top: 35px;
     }
     .new-products{
+        margin-top: 20px;
+    }
+    .interesting-products{
+        margin-top: 35px;
     }
 }
 
@@ -24,6 +31,9 @@
         }
         .new-products{
             margin-bottom: 35px;
+        }
+        .interesting-products{
+            margin-top: 15px;
         }
     }
 }

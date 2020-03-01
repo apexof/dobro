@@ -1,114 +1,123 @@
 module.exports = {
     newProducts: [
         {
-            name: "Сыр плав ХОХЛАНД Фетакса 200гр/16шт",
+            name: "Сыр плав ХОХЛАНД Фетакса",
             price: "109",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            weight: "200",
-            count: "16",
-            img: "newProduct-1"
+            img: "newProduct-1",
+            weight: "200гр/16шт"
         },
         {
-            name: "Ролл Цезарь курица 210г",
+            name: "Ролл Цезарь курица",
             price: "108",
             oldPrice: "299",
             inStock: false,
             rating: 5,
-            img: "newProduct-2"
+            img: "newProduct-2",
+            weight: "210г"
         },
         {
-            name: "Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт",
+            name: "Халва АЗОВСКАЯ подсол изюм",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "newProduct-3"
+            img: "newProduct-3",
+            weight: "5,6кг шт 16шт"
         },
         {
-            name: "Вафли КОРОВКА топл молоко 150гр",
+            name: "Вафли КОРОВКА топл молоко",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "newProduct-4"
+            img: "newProduct-4",
+            weight: "210г"
         },
         {
-            name: "Крекер ТУК сыр 100гр",
+            name: "Крекер ТУК сыр",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "newProduct-5"
+            img: "newProduct-5",
+            weight: "210г"
         },
         {
-            name: "Чипсы ЛЕЙС рифлен сметана/лук 150гр",
+            name: "Чипсы ЛЕЙС рифлен сметана/лук",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "newProduct-6"
+            img: "newProduct-6",
+            weight: "210г"
         },
         {
-            name: "Пюре АГУША ябл/банан ст/б 115гр",
+            name: "Пюре АГУША ябл/банан ст/б",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "newProduct-7"
+            img: "newProduct-7",
+            weight: "210г"
         },
         {
-            name: "Сок БЛ виноград осв 0,2л",
+            name: "Сок БЛ виноград осв",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "newProduct-8"
+            img: "newProduct-8",
+            weight: "0,2л"
         }
     ],
     interestingProducts: [
         {
-            name: "Дюшбере ХАЛЯЛЬ элитные 450гр",
+            name: "Дюшбере ХАЛЯЛЬ элитные",
             price: "109",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            weight: "200",
-            count: "16",
-            img: "interesting-products-1"
+            img: "interesting-products-1",
+            weight: "210г"
         },
         {
-            name: "Крупа МИСТРАЛЬ гречневая 900гр",
+            name: "Крупа МИСТРАЛЬ гречневая",
             price: "108",
             oldPrice: "299",
             inStock: false,
             rating: 5,
-            img: "interesting-products-2"
+            img: "interesting-products-2",
+            weight: "210г"
         },
         {
-            name: "Фундук чищен /40кг",
+            name: "Фундук чищен",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "interesting-products-3"
+            img: "interesting-products-3",
+            weight: "/40кг"
         },
         {
-            name: "Фунчоза ЧИМ ЧИМ бобовая 200гр/18шт",
+            name: "Фунчоза ЧИМ ЧИМ бобовая",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "interesting-products-4"
+            img: "interesting-products-4",
+            weight: "200гр/18шт"
         },
         {
-            name: "Овощи зам ВИТАМИН карибская смесь 400гр",
+            name: "Овощи зам ВИТАМИН карибская смесь",
             price: "108",
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "interesting-products-5"
+            img: "interesting-products-5",
+            weight: "210г"
         },
         {
             name: "Кофе МАХМУД Капучино пак",
@@ -116,7 +125,8 @@ module.exports = {
             oldPrice: "299",
             inStock: true,
             rating: 5,
-            img: "interesting-products-6"
+            img: "interesting-products-6",
+            weight: "210г"
         },
         {
             name: "Виноград черный",
