@@ -3,8 +3,8 @@ const gulp = require("gulp");
 
 const { src, task, dest } = gulp;
 
-task("static", () => src("./assets/static/**/*")
+task("static", () => src("./src/assets/static/**/*")
     .pipe(dest("./build/assets/static")));
 
-task("fonts", () => src("./assets/fonts/**/*.{woff,ttf,eot}")
+task("fonts", () => src("./src/assets/fonts/**/*.{woff,ttf,eot}")
     .pipe(dest("./build/assets/fonts")));
