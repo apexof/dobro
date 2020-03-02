@@ -11,7 +11,7 @@ task("ejs", () => src("./src/index.ejs")
     .pipe($.rename({ extname: ".html" }))
     .pipe($.htmlhint())
     .pipe($.htmlhint.reporter())
-    .pipe($.htmlmin({ collapseWhitespace: true }))
+    // .pipe($.htmlmin({ collapseWhitespace: true }))
     .pipe(dest("./build")));
 
 task("sass", () => src(["./src/**/*.scss", "!./src/assets/libs/**/*.scss"])
@@ -19,12 +19,13 @@ task("sass", () => src(["./src/**/*.scss", "!./src/assets/libs/**/*.scss"])
     .pipe($.sass())
     .pipe($.autoprefixer())
     .pipe($.shorthand())
-    .pipe($.csso())
+    // .pipe($.csso())
     .pipe($.remember("sass"))
     .pipe($.concat("style.css"))
     .pipe(dest("./build")));
 
 task("sass-vendors", () => src("./src/assets/libs/**/*.scss")
     .pipe($.sass())
+    .pipe($.csso())
     .pipe($.concat("vendors.css"))
     .pipe(dest("./build")));

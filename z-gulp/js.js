@@ -15,6 +15,6 @@ task("js", () => src(["./src/**/*.js", "!./src/assets/libs/**/*.js"])
     .pipe($.concat("script.js"))
     .pipe(dest("./build")));
 
-task("js-vendors", () => src("./src/assets/libs/**/*.js")
+task("js-vendors", () => src(["./src/assets/libs/**/*.js", "!./src/assets/libs/jquery-3.4.1.min.js"])
     .pipe($.concat("vendors.js"))
     .pipe(dest("./build")));

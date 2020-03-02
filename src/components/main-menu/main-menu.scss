@@ -23,6 +23,7 @@
         }
     }
     &__list{
+        display: none;
         position: absolute;
         top: 45px;
         left: 0;
@@ -75,6 +76,7 @@
         }
         &__list{
             top: 60px;
+            display: block;
         }
     }
 }
