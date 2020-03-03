@@ -9,17 +9,13 @@
                 <div class="header__menu-el header__link">Мои заказы</div>
             </div>
             <div class="header__info">
-                <div class="header__logo">
+                <a class="header__logo" href="/">
                     <img src="./img/header-logo.svg" alt="">
-                </div>
-                <form>
-                    <div class="header__search-input">
-                        <input type="text" placeholder="Поиск по каталогу">
-                        <button type="submit">
-                            <img src="./img/header-search-logo.svg" alt="">
-                        </button>
-                    </div>
-                </form>
+                </a>
+                <%- include('../../els/search-form/search-form', {
+                    cssClass: "header__line-el header__search-form"
+                }); %>
+
                 <a class="header__tel header__info-el" href="tel:91-11-07">
                     <div class="header__tel-logo">
                         <img src="./img/header-phone-logo.svg" alt="">
@@ -70,16 +66,22 @@
                 </div>
             </div>
             <div class="header__line">
-                <div class="header__line-el" class="header__link">Мой профиль</div>
-                <div class="header__line-el" class="header__link">Мои заказы</div>
-                <img class="header__line-el search-icon" src="./img/header-search-logo.svg" alt="">
-                <img class="header__line-el" src="./img/header-heart-logo.svg" alt="">
-                <img class="header__line-el" src="./img/header-connection-logo.svg" alt="">
+                <a class="header__line-el header__link">Мой профиль</a>
+                <a class="header__line-el header__link">Мои заказы</a>
+                <%- include('../../els/search-form/search-form', {
+                    cssClass: "header__line-el header__search-form"
+                }); %>
+                <a href="" class="header__line-el header__link">
+                    <img src="./img/header-heart-logo.svg" alt="">
+                </a>
+                <a href="" class="header__line-el header__link">
+                    <img class="header__line-el" src="./img/header-connection-logo.svg" alt="">
+                </a>
             </div>
             <div class="header__line">
-                <div class="header__logo">
+                <a class="header__logo" href="/">
                     <img src="./img/header-logo.svg" alt="">
-                </div>
+                </a>
                 <div class="header__cart">
                     <div class="header__cart-logo">
                         <img src="./img/header-cart-logo.svg" alt="">
