@@ -816,12 +816,19 @@ h2 {
     opacity: 0.3;
   }
 
-  .header__search-input img {
-    height: 16px;
-    width: 16px;
+  .header__search-input button {
     position: absolute;
     right: 14px;
     top: calc(50% - 8px);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .header__search-input button img {
+    display: block;
+    height: 16px;
+    width: 16px;
   }
 
   .header .header__info-el {

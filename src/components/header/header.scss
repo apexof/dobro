@@ -182,12 +182,18 @@
                     opacity: 0.3;
                 }
             }
-            img{
-                height: 16px;
-                width: 16px;
+            button{
                 position: absolute;
                 right: 14px;
                 top: calc(50% - 8px);
+                background-color: transparent;
+                cursor: pointer;
+                padding: 0;
+                img{
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                }
             }
         }
         .header__info-el{
