@@ -50,6 +50,10 @@
         &:first-child{
             margin-right: 4px;
         }
+        img{
+            height: 33px;
+            display: block;
+        }
     }
     &__copyright{
         padding: 10px 0 20px;

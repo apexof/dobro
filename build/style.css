@@ -492,6 +492,11 @@ h2 {
   margin-right: 4px;
 }
 
+.footer__market-logo img {
+  height: 33px;
+  display: block;
+}
+
 .footer__copyright {
   padding: 10px 0 20px;
   border-top: 1px solid #EEEEEE;
