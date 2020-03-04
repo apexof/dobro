@@ -4,7 +4,7 @@ const products = require("./ejs/products");
 
 const { dest, src, task } = gulp;
 
-task("ejs", () => src("./src/index.ejs")
+task("ejs", () => src("./src/pages/**/*.ejs")
     .pipe($.ejs({
         ext: "jpg", or: "portrait", products, lazyCx: "lazy"
     }))

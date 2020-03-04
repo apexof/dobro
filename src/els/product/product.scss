@@ -19,43 +19,8 @@
             display: block;
         }
     }
-    &__rating{
+    .rating-box{
         margin: 5px 0;
-        display: flex;
-        align-items: center;
-        &-stars{
-            display: flex;
-            img{
-                width: 9px;
-                height: 9px;
-                display: block;
-                +img{
-                    margin-left: 1.7px;
-                }
-            }
-        }
-        &-count{
-            display: block;
-            font-weight: 300;
-            font-size: 12px;
-            line-height: 13px; 
-            text-decoration-line: underline;            
-            color: #000000;
-            margin-left: 3px;
-            cursor: pointer;
-        }
-        &-icon{
-            margin-left: 5px;
-            cursor: pointer;
-            &.heart{
-                margin-left: auto;
-            }
-            img{
-                display: block;
-                width: 9px;
-                height: 9px;     
-            }
-        }
     }
     &__in-stock{
         font-weight: 600;
@@ -148,36 +113,13 @@
             width: 33.33%;
             padding: 0 10px;
         }
-        &__rating{
-            margin: 15px 0; 
-            &-stars{
-                img{
-                    width: 15px;
-                    height: 15px;
-                    +img{
-                        margin-left: 4px;
-                    }
-                }
-            }
-            &-count{
-                font-weight: 300;
-                font-size: 12px;
-                line-height: 13px;
-            }
-            &-icon{
-                margin-left: 10px;
-                &.heart{
-                }
-                img{
-                    width: 15px;
-                    height: 15px;     
-                }
-            }
-        }
         &__img{
             img{   
                 height: 170px;
             }
+        }
+        .rating-box{
+            margin: 15px 0; 
         }
         &__in-stock{
             font-weight: 600;

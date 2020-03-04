@@ -2,25 +2,24 @@
     <div class="product">
         <div class="product__img">
             <%- include('../img', {src: img, cx: "img-box" }); %>
-
         </div>
-        <div class="product__rating">
-            <div class="product__rating-stars">
+        <div class="rating-box">
+            <div class="rating-box__stars">
                 <img src="./img/product-rating-star.svg" alt="">
                 <img src="./img/product-rating-star.svg" alt="">
                 <img src="./img/product-rating-star.svg" alt="">
                 <img src="./img/product-rating-star.svg" alt="">
                 <img src="./img/product-rating-star.svg" alt="">
             </div>
-            <a href="./" class="product__rating-count">
+            <a href="./" class="rating-box__count">
                 1
             </a>
-            <div class="product__rating-icon heart">
+            <a href="./" class="rating-box__icon heart">
                 <img src="./img/header-heart-logo.svg" alt="">
-            </div>
-            <div class="product__rating-icon">
+            </a>
+            <a href="./" class="rating-box__icon">
                 <img src="./img/header-connection-logo.svg" alt="">
-            </div>
+            </a>
         </div>
         <% if (inStock) { %>
         <div class="product__in-stock">

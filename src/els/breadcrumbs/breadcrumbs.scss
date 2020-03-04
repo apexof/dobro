@@ -1,0 +1,53 @@
+.breadcrumbs{
+    padding: 13px 0;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: -14px;    }
+    &__el{
+        white-space: nowrap;
+        padding: 0 20px 0 14px;
+        position: relative;
+        &:after{
+            content: "";
+            right: 0; 
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url("./img/arrow-bread-icon.svg");
+            width: 5px;
+            height: 9px;
+            top: calc(50% - 3.5px);
+        }
+        &-link{
+            font-size: 14px;
+            line-height: 17px;
+            color: #7B7B7B;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+    .breadcrumbs{
+        padding: 18px 0;
+        border-top: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+    }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
