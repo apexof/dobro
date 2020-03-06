@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Добро</title>
+
+    <link rel="shortcut icon" href="./assets/static/favicon.ico">
+
+    <!-- main -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./vendors.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,500i,700i,900&display=swap&subset=cyrillic"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page cart-page">
+        <header class="header">
+    <div class="container">
+        <div class="header_desktop">
+            <div class="header__menu">
+                <a href="./" class="header__menu-el header__link">Как сделать заказ</a>
+                <a href="./" class="header__menu-el header__link">Условия доставки</a>
+                <a href="./" class="header__menu-el header__link">Политика конфеденциальности</a>
+                <a href="./" class="header__menu-el header__link profile-link">Мой профиль</a>
+                <a href="./" class="header__menu-el header__link">Мои заказы</a>
+            </div>
+            <div class="header__info">
+                <a class="header__logo" href="./">
+                    <img src="./img/header-logo.svg" alt="">
+                </a>
+                <form class="search-form header__line-el header__search-form">
+    <input class="search-form__input" type="text" placeholder="Поиск по каталогу">
+    <button type="submit" class="search-form__btn">
+        <img src="./img/header-search-logo.svg" alt="">
+    </button>
+</form>
+
+                <a class="header__tel header__info-el" href="tel:91-11-07">
+                    <div class="header__tel-logo">
+                        <img src="./img/header-phone-logo.svg" alt="">
+                    </div>
+                    <span class="header__tel-number">
+                        91-11-07
+                    </span>
+                </a>
+                <div class="header__schedule header__info-el">
+                    <div class="header__schedule-logo">
+                        <img src="./img/header-clock-logo.svg" alt="">
+                    </div>
+                    <div class="header__schedule-text">
+                        Пн-Вс 8:00—20:00
+                    </div>
+                </div>
+                <a href="./" class="header__cart header__info-el">
+                    <div class="header__cart-logo">
+                        <img src="./img/header-cart-logo.svg" alt="">
+                    </div>
+                    <div class="header__cart-count">
+                        0
+                    </div>
+                    <div class="header__cart-text">
+                        Корзина пуста
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="header_mobile">
+            <div class="header__line">
+                <a class="header__tel header__1line-el" href="tel:91-11-07">
+                    <div class="header__tel-logo">
+                        <img src="./img/header-phone-logo.svg" alt="">
+                    </div>
+                    <span class="header__tel-number">
+                        91-11-07
+                    </span>
+                </a>
+                <div class="separator"></div>
+                <div class="header__schedule header__1line-el">
+                    <div class="header__schedule-logo">
+                        <img src="./img/header-clock-logo.svg" alt="">
+                    </div>
+                    <div class="header__schedule-text">
+                        Пн-Вс 8:00—20:00
+                    </div>
+                </div>
+            </div>
+            <div class="header__line">
+                <a href="./" class="header__line-el header__link">Мой профиль</a>
+                <a href="./" class="header__line-el header__link">Мои заказы</a>
+                <form class="search-form header__line-el header__search-form">
+    <input class="search-form__input" type="text" placeholder="Поиск по каталогу">
+    <button type="submit" class="search-form__btn">
+        <img src="./img/header-search-logo.svg" alt="">
+    </button>
+</form>
+                <a href="./" class="header__line-el header__link">
+                    <img src="./img/header-heart-logo.svg" alt="">
+                </a>
+                <a href="./" class="header__line-el header__link">
+                    <img class="header__line-el" src="./img/header-connection-logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__line">
+                <a class="header__logo" href="./">
+                    <img src="./img/header-logo.svg" alt="">
+                </a>
+                <a href="./" class="header__cart header__info-el">
+                    <div class="header__cart-logo">
+                        <img src="./img/header-cart-logo.svg" alt="">
+                    </div>
+                    <div class="header__cart-count">
+                        0
+                    </div>
+                    <div class="header__cart-text">
+                        Корзина пуста
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+    <div class="main-menu-grid">
+        <div class="main-menu">
+    <div id="main-menu-button" class="main-menu__button">
+        <div class="main-menu__text">
+            Каталог товаров
+        </div>
+        <div class="main-menu__burger">
+            <img src="./img/main-menu-burger-icon.svg" alt="">
+        </div>
+    </div>
+    <div id="main-menu-list" class="main-menu__list">
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-1.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Чай и Кофе
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-2.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Кондитерская
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-3.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Выпечка, хлебные изделия
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-4.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Сухофрукты
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-5.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Чипсы, семечки, сухари, орехи
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-6.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Для диабетиков
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-7.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Детское питание
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-8.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Бакалея
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-9.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Японская кухня
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-10.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Овощи фрукты
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-11.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Молочная продукция
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-12.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Мясная гастрономия
+            </div>
+        </a>
+    </div>
+</div>
+        <div class="main-menu-grid__right">
+            <div class="main-menu-grid__top-menu">
+                <a href="./" class="main-menu-grid__top-menu-el">
+                    <div class="main-menu-grid__top-menu-el-count">
+                        0
+                    </div>
+                    <div class="main-menu-grid__top-menu-el-text">
+                        Избранное
+                    </div>
+                </a>
+                <a href="./" class="main-menu-grid__top-menu-el">
+                    <div class="main-menu-grid__top-menu-el-count">
+                        5
+                    </div>
+                    <div class="main-menu-grid__top-menu-el-text">
+                        Сравнение
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+        <div class="container">
+    <div class="breadcrumbs">
+        <div class="breadcrumbs__list">
+            
+            <div class="breadcrumbs__el">
+                <a href="./" class="breadcrumbs__el-link">
+                    Главная страница
+                </a>
+            </div>
+            
+            <div class="breadcrumbs__el">
+                <a href="./" class="breadcrumbs__el-link">
+                    Корзина
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+        <div class="container">
+    <div class="cart">
+        <div class="cart__head">
+            <div class="cart__title">
+                Корзина
+            </div>
+            <div class="cart__price">
+                <span class="cart__price_text">
+                    Товаров на сумму:
+                </span>
+                <span class="cart__price_summ">
+                    120 000 Р
+                </span>
+            </div>
+        </div>
+        <div class="cart__list">
+            <div class="cart-el">
+                <div class="cart-el__img">
+                    <img src="./img/cart-el-1.jpg" alt="">
+                </div>
+                <div class="cart-el__info">
+                    <div class="cart-el__name">
+                        Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт
+                    </div>
+                    <div class="rating-box">
+                        <div class="rating-box__stars">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                        </div>
+                        <a href="./" class="rating-box__count">
+                            1
+                        </a>
+                        <a href="./" class="rating-box__icon heart">
+                            <img src="./img/header-heart-logo.svg" alt="">
+                        </a>
+                        <a href="./" class="rating-box__icon">
+                            <img src="./img/header-connection-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="cart-el__price">
+                        109 Р
+                    </div>
+                    <div class="cart-el__old-price">
+                        299 Р
+                    </div>
+                    <div class="cart-el__del">
+                        <img src="./img/cart-del-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-el">
+                <div class="cart-el__img">
+                    <img src="./img/cart-el-2.jpg" alt="">
+                </div>
+                <div class="cart-el__info">
+                    <div class="cart-el__name">
+                        Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт
+                    </div>
+                    <div class="rating-box">
+                        <div class="rating-box__stars">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                            <img src="./img/product-rating-star.svg" alt="">
+                        </div>
+                        <a href="./" class="rating-box__count">
+                            1
+                        </a>
+                        <a href="./" class="rating-box__icon heart">
+                            <img src="./img/header-heart-logo.svg" alt="">
+                        </a>
+                        <a href="./" class="rating-box__icon">
+                            <img src="./img/header-connection-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="cart-el__price">
+                        109 Р
+                    </div>
+                    <div class="cart-el__old-price">
+                        299 Р
+                    </div>
+                    <div class="cart-el__del">
+                        <img src="./img/cart-del-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__btns">
+            <a href="./" class="btn">
+                Перейти к оплате
+            </a>
+            <a href="./" class="btn btn_grey">
+                Вернуться назад
+            </a>
+        </div>
+    </div>
+</div>
+        <div class="container">
+    <div class="products-grid interesting-products">
+        <h2 class="products-grid__title">Вам будет интересно</h2>
+        <div class="products-grid__list">
+            
+            
+            <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/interesting-products-1.webp" 
+        srcset="./img/previews/interesting-products-1.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/interesting-products-1.svg" 
+        data-src="./img/interesting-products-1.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Дюшбере ХАЛЯЛЬ элитные">
+            Дюшбере ХАЛЯЛЬ элитные
+            
+            <span class="product__name-weight">210г</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                109 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+            
+            
+            
+            <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/interesting-products-2.webp" 
+        srcset="./img/previews/interesting-products-2.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/interesting-products-2.svg" 
+        data-src="./img/interesting-products-2.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        
+        <div class="product__in-stock product__in-stock_false">
+            Нет в наличии
+        </div>
+        
+        <a href="./" class="product__name" title="Крупа МИСТРАЛЬ гречневая">
+            Крупа МИСТРАЛЬ гречневая
+            
+            <span class="product__name-weight">210г</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+            
+            
+            
+            <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/interesting-products-3.webp" 
+        srcset="./img/previews/interesting-products-3.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/interesting-products-3.svg" 
+        data-src="./img/interesting-products-3.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Фундук чищен">
+            Фундук чищен
+            
+            <span class="product__name-weight">/40кг</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+            
+            
+            
+            <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/interesting-products-4.webp" 
+        srcset="./img/previews/interesting-products-4.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/interesting-products-4.svg" 
+        data-src="./img/interesting-products-4.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Фунчоза ЧИМ ЧИМ бобовая">
+            Фунчоза ЧИМ ЧИМ бобовая
+            
+            <span class="product__name-weight">200гр/18шт</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</div>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__list">
+            <div class="footer__group">
+                <div class="footer__group-title">
+                    Страницы
+                </div>
+                <div class="footer__group-list">
+                    <a class="footer__group-list-el" href="./">
+                        Как сделать заказ
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        Условия доставки
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+            <div class="footer__group">
+                <div class="footer__group-title">
+                    Личный кабинет
+                </div>
+                <div class="footer__group-list">
+                    <a class="footer__group-list-el" href="./">
+                        Мои заказы
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        Мой профиль
+                    </a>
+                </div>
+            </div>
+            <div class="footer__group">
+                <div class="footer__group-title">
+                    Контакты
+                </div>
+                <div class="footer__group-list">
+                    <a class="footer__group-list-el" href="tel:91-11-07">
+                        91-11-07
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        WApp: 8(988)29-111-07
+                    </a>
+                    <a class="footer__group-list-el" href="mailto:info@shop-dobro.ru">
+                        info@shop-dobro.ru
+                    </a>
+                </div>
+            </div>
+            <div class="footer__logos">
+                <a href="./" class="footer__market-logo">
+                    <img src="./img/app-stop-logo.svg" alt="">
+                </a>
+                <a href="./" class="footer__market-logo">
+                    <img src="./img/google-play-logo.svg" alt="">
+                </a>
+                <a class="footer__main-logo" href="./">
+                    <img src="./img/header-logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            © 2020 ДОБРО
+        </div>
+    </div>
+</footer>
+</div>
+<!-- libs  -->
+<script src="./assets/static/jquery-3.4.1.min.js"></script>
+<!-- libs  -->
+<script src="./vendors.js"></script>
+
+<!-- main -->
+<script src="./script.js"></script>
+</body>
+
+</html>

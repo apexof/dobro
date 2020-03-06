@@ -1,0 +1,29 @@
+.cart-page{
+    .main-menu__list{
+        display: none;
+    }
+    .interesting-products {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+    .cart-page{
+        .main-menu-grid{
+            margin-top: 15px;
+        }
+        .breadcrumbs{
+            border-bottom: 0;
+        }
+ 
+    }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('../els/head'); %>
+
+<body>
+    <div class="page cart-page">
+        <%- include('../components/header/header'); %>
+        <%- include('../components/main-menu-grid/main-menu-grid',{banner: false}); %>
+        <%- include('../els/breadcrumbs/breadcrumbs', {
+            links: [
+                {
+                    name: "Главная страница",
+                    link: "./"
+                },
+                {
+                    name: "Корзина",
+                    link: "./"
+                },        
+            ]
+        });  %>
+        <%- include('../components/cart-list/cart-list'); %>
+        <%- include('../components/productsGrid/productsGrid', {
+            title: "Вам будет интересно",
+            cssClass: "interesting-products",
+            arrayItems: "interestingProducts",
+            maxCount: 4
+        }); %>
+        <%- include('../components/footer/footer'); %>

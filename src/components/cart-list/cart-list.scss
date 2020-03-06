@@ -1,0 +1,206 @@
+.cart{
+    margin-bottom: 20px;    
+    &__head{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    &__title{
+        font-weight: 300;
+        font-size: 44px;
+        line-height: 54px;
+        color: #000000;
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+
+        &_text{
+
+        }
+        &_summ{
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    }
+    &__list{
+        margin-top: 20px;
+    }
+    &-el{
+        display: flex;
+        padding: 14px;
+        border: 1px solid #EEEEEE;
+        +.cart-el{
+            margin-top: 20px;
+        }
+        &__img{
+            width: 33.33%;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__info{
+            width: 66.66%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 14px;
+        }
+        &__name{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+        .rating-box{
+            margin: 10px 0 5px;
+            &__stars{
+                img{
+                    height: 14px;
+                    width: 14px;
+                    &+img{
+                        margin-left: 4px;
+                    }
+                }
+            }
+            &__count{
+                margin-left: 6px;
+            }
+            &__icon{
+                display: none;
+            }
+        }
+        &__price{
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 26px;
+            color: #000000;
+        }
+        &__old-price{
+            font-size: 15px;
+            line-height: 18px;
+            text-decoration-line: line-through;
+            color: #000000;
+            opacity: 0.5;
+        }
+        &__del{
+            height: 44px;
+            width: 44px;
+            background: #EEEEEE;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-left: auto;
+            img{
+                display: block;
+            }
+        }
+    }
+    &__btns{
+        margin-top: 20px;
+        .btn{
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        .btn+.btn{
+            margin-top: 15px;
+        }
+    }    
+}   
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+    .cart{  
+        &__head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__title{
+       
+        }
+        &__price{
+        
+    
+            &_text{
+    
+            }
+            &_summ{
+              
+            }
+        }
+        &__list{
+        }
+        &-el{
+            padding: 22px;
+            height: 160px;
+            +.cart-el{
+            }
+            &__img{
+                width: 115px;
+                flex-shrink: 0;
+                img{
+                  width: 113px;
+                }
+            }
+            &__info{
+                position: relative;
+                padding-left: 20px;
+                width: 100%;
+            }
+            &__name{
+      
+            }
+            .rating-box{
+                &__stars{
+                    img{                    
+                        &+img{
+                        }
+                    }
+                }
+                &__count{
+                }
+                &__icon{
+                    display: block;
+                }
+            }
+            &__price{
+                margin-top: auto;
+            }
+            &__old-price{
+            
+            }
+            &__del{
+                position: absolute;
+                right: 0;
+                bottom: 0;     
+                img{
+                }
+            }
+        }
+        &__btns{
+            padding-bottom: 15px;
+            border-bottom: 1px solid #EEEEEE;
+            .btn{
+               display: inline-flex;
+            }
+            .btn+.btn{
+                margin: 0 0 0 15px;
+            }
+        }    
+    }   
+}
+
+@media (min-width: 992px) {
+    .cart {
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
