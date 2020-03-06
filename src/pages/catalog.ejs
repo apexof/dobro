@@ -3,7 +3,7 @@
 <%- include('../els/head'); %>
 
 <body>
-    <div class="page product-detail-page">
+    <div class="page catalog-page">
         <%- include('../components/header/header'); %>
         <%- include('../components/main-menu-grid/main-menu-grid',{banner: false}); %>
         <%- include('../els/breadcrumbs/breadcrumbs', {
@@ -16,21 +16,7 @@
                     name: "Каталог товаров",
                     link: "./"
                 },
-                {
-                    name: "Товарная категория",
-                    link: "./"
-                },
-                {
-                    name: "Страниц товара",
-                    link: "./"
-                },
             ]
         });  %>
-        <%- include('../components/product-detail/product-detail'); %>
-        <%- include('../components/productsGrid/productsGrid', {
-            title: "Вам будет интересно",
-            cssClass: "interesting-products",
-            arrayItems: "interestingProducts",
-            maxCount: 4
-        }); %>
+        <%- include('../components/description/description'); %>
         <%- include('../components/footer/footer'); %>

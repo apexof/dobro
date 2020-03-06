@@ -1,0 +1,31 @@
+.order-page{
+    .main-menu-grid{
+        margin-top: 10px;
+    }
+    .main-menu__list{
+        display: none;
+    }
+    .order{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+    .order-page{
+        .main-menu-grid{
+            margin-top: 15px;
+        }
+        .breadcrumbs{
+            border-bottom: 0;
+        }
+    }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}

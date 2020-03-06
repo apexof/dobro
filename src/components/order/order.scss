@@ -1,0 +1,225 @@
+.order{
+    &__head{
+
+    }
+    &__title{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &__price{
+        display: none;
+    }
+    &-form{
+        &__buyer{
+            border-bottom: 1px solid #EEEEEE;
+            padding-bottom: 10px;
+        }
+        &__block-title{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 44px;
+            color: #000000;
+            margin: 10px 0;
+        }
+        &__input{
+            +.order-form__input{
+                margin-top: 40px;
+                &.compact{
+                    margin-top: 10px;
+                }
+            }
+            label{
+                display: block;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                margin-bottom: 5px;
+            }
+            input, select{
+                background: #FFFFFF;
+                height: 44px;
+                border: 1px solid #C1C1C1;
+                border-radius: 4px;
+                padding: 13px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                width: 100%;
+                max-width: 280px;
+                &::placeholder{
+                    opacity: 0.3;
+                }
+            }
+        }
+        &__politics{
+            font-size: 14px;
+            line-height: 20px;
+            color: #7B7B7B;
+            margin: 10px 0;
+            &_green{
+                color:#97b911;
+                text-decoration: none;
+            }
+        }
+        .custom-checkbox{
+            margin: 10px 0;
+        }
+        &__reg-info{
+            font-size: 14px;
+            line-height: 20px;
+            color: #7B7B7B;
+        }
+        &__delivery{
+
+        }
+        &__confirmation{
+            .order-form__block-title{
+                border-bottom: 1px solid #EEEEEE;
+                padding-bottom: 10px;                
+            }
+            padding-bottom: 20px;
+            border-bottom: 1px solid #EEEEEE;
+            .btn{
+                &+.btn{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+.delivery-box{
+    padding: 20px;
+    border: 1px solid #EEEEEE; 
+    position: relative;
+    &__head{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+    &__price{
+        height: 24px;
+        background: #B2DB11;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        padding: 4px 12px;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 20px;
+        color: #7B7B7B;
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+    .order{
+        &__head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__title{
+            font-size: 44px;
+            line-height: 54px;
+        }
+        &__price{
+            display: block;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            font-weight: 500;
+            &-num{
+                font-weight: bold;
+                margin-left: 20px;
+            }
+        }
+        &-form{
+            &__buyer{
+                border: 0;
+            }
+            &__block-title{
+                margin-top: 20px;
+            }
+            &__input-list{
+                margin: -20px -20px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            &__input{
+                width: 50%;
+                padding: 0 20px;
+                margin-top: 20px;
+                +.order-form__input{
+                    margin-top: 20px;
+                    &.compact{
+                        margin-top: 20px;
+                    }
+                }
+                label{
+     
+                    
+                }
+                input, select{
+                    max-width: unset;      
+                    
+                    &::placeholder{
+                        
+                    }
+                }
+            }
+            &__politics{
+                max-width: 577px;
+                margin: 20px 0;  
+            }
+            .custom-checkbox{
+                
+            }
+            &__reg-info{
+                margin-top: 20px;                
+            }
+            &__delivery{    
+                max-width: 580px;
+    
+            }
+            &__confirmation{
+                .order-form__block-title{
+            
+                                 
+                }
+       
+                
+                .btn{
+                    max-width: 210px;
+                    display: inline-flex;
+                    &+.btn{
+                        margin: 0 0 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}

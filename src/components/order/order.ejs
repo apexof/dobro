@@ -1,0 +1,140 @@
+<div class="container">
+    <div class="order">
+        <div class="order__head">
+            <div class="order__title">
+                Оформление заказа
+            </div>
+            <div class="order__price">
+                <span>Товаров на сумму:</span>
+                <span class="order__price-num">120 000 Р</span>
+            </div>
+        </div>
+        <form class="order-form">
+            <div class="order-form__buyer">
+                <label class="custom-radio">
+                    <input type="radio" name="buyer">
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Я новый покупатель
+                    </div>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="buyer">
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Я уже заказывал ранее и у меня есть аккаунт
+                    </div>
+                </label>
+            </div>
+            <div class="order-form__contact">
+                <div class="order-form__block-title">
+                    Контактная информация
+                </div>
+                <div class="order-form__input-list">
+                    <div class="order-form__input">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="order-form__input">
+                        <label>Мобильный телефон</label>
+                        <input type="text" placeholder="Ваш нормер">
+                    </div>
+                </div>
+            </div>
+            <div class="order-form__address">
+                <div class="order-form__block-title">
+                    Адрес доставки
+                </div>
+                <div class="order-form__input-list">
+                    <div class="order-form__input">
+                        <label>Город</label>
+                        <input type="text" placeholder="Город">
+                    </div>
+                    <div class="order-form__input">
+                        <label>Улица, дом, квартира</label>
+                        <input type="text" placeholder="Улица, дом, квартира">
+                    </div>
+                    <div class="order-form__input compact">
+                        <label>Подъезд, этаж</label>
+                        <input type="text" placeholder="Подъезд, этаж">
+                    </div>
+                    <div class="order-form__input">
+                        <label>Регион</label>
+                        <select>
+                            <option selected disabled>Выберите регион</option>
+                            <option>Пункт 1</option>
+                            <option>Пункт 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="order-form__politics">
+                    Нажимая на кнопку подтверждения, я принимаю условия
+                    <a href="./" class="order-form__politics_green">
+                        политики обработки персональных данных
+                    </a>
+                </div>
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <div class="custom-checkbox__label">
+                        Зарегистрироваться как постоянный покупатель
+                    </div>
+                </label>
+                <div class="order-form__reg-info">
+                    Зарегистрированные покупатели получают накопительные бонусные баллы и скидки на будущие заказы. Этот
+                    заказ добавит +0.67 баллов к вашему партнерскому бонусу.
+                </div>
+            </div>
+            <div class="order-form__delivery">
+                <div class="order-form__block-title">
+                    Доставка
+                </div>
+                <div class="delivery-box">
+                    <div class="delivery-box__head">
+                        <div class="delivery-box__title">
+                            Самовывоз
+                        </div>
+                        <div class="delivery-box__price">
+                            100 Р
+                        </div>
+                    </div>
+                    <div class="delivery-box__text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, "Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+            <div class="order-form__payment">
+                <div class="order-form__block-title">
+                    Оплата
+                </div>
+                <label class="custom-radio custom-radio_payment">
+                    <input type="radio" name="payment" checked>
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Яндекс.Деньги
+                    </div>
+                </label>
+                <label class="custom-radio custom-radio_payment">
+                    <input type="radio" name="payment">
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Наличными курьеру
+                    </div>
+                </label>
+            </div>
+            <div class="order-form__confirmation">
+                <div class="order-form__block-title">
+                    Подтверждение заказа
+                </div>
+                <a href="./" class="btn">
+                    Перейти к оплате
+                </a>
+                <a href="./" class="btn btn_grey">
+                    Вернуться назад
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

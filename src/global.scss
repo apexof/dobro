@@ -113,9 +113,13 @@ button {
     background: #B2DB11;
     text-decoration: none;
     &:hover {
-        text-decoration: none;
-        color: #fff;
         background: #A3C715;
+    }
+    &_grey{
+        background: #C1C1C1;
+        &:hover {
+            background: darken(#C1C1C1, 10%);
+        }
     }
 }  
 @import './assets/fonts/fonts.scss';

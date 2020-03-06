@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('../els/head'); %>
+
+<body>
+    <div class="page order-page">
+        <%- include('../components/header/header'); %>
+        <%- include('../components/main-menu-grid/main-menu-grid',{banner: false}); %>
+        <%- include('../els/breadcrumbs/breadcrumbs', {
+            links: [
+                {
+                    name: "Главная страница",
+                    link: "./"
+                },
+                {
+                    name: "Оформление заказа",
+                    link: "./"
+                },
+            ]
+        });  %>
+
+        <%- include('../components/order/order'); %>
+        <%- include('../components/footer/footer'); %>

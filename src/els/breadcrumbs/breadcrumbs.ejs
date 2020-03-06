@@ -1,24 +1,13 @@
-<div class="breadcrumbs">
-    <div class="breadcrumbs__list">
-        <div class="breadcrumbs__el">
-            <a href="./" class="breadcrumbs__el-link">
-                Главная страница
-            </a>
-        </div>
-        <div class="breadcrumbs__el">
-            <a href="./" class="breadcrumbs__el-link">
-                Каталог товаров
-            </a>
-        </div>
-        <div class="breadcrumbs__el">
-            <a href="./" class="breadcrumbs__el-link">
-                Товарная категория
-            </a>
-        </div>
-        <div class="breadcrumbs__el">
-            <a href="./" class="breadcrumbs__el-link">
-                Страниц товара
-            </a>
+<div class="container">
+    <div class="breadcrumbs">
+        <div class="breadcrumbs__list">
+            <% links.forEach(function(item){ %>
+            <div class="breadcrumbs__el">
+                <a href="<%=item.link%>" class="breadcrumbs__el-link">
+                    <%=item.name%>
+                </a>
+            </div>
+            <% }); %>
         </div>
     </div>
 </div>
