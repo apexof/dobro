@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Добро</title>
+
+    <link rel="shortcut icon" href="./assets/static/favicon.ico">
+
+    <!-- main -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./vendors.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,500i,700i,900&display=swap&subset=cyrillic"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page order-page">
+        <header class="header">
+    <div class="container">
+        <div class="header_desktop">
+            <div class="header__menu">
+                <a href="./" class="header__menu-el header__link">Как сделать заказ</a>
+                <a href="./" class="header__menu-el header__link">Условия доставки</a>
+                <a href="./" class="header__menu-el header__link">Политика конфеденциальности</a>
+                <a href="./" class="header__menu-el header__link profile-link">Мой профиль</a>
+                <a href="./" class="header__menu-el header__link">Мои заказы</a>
+            </div>
+            <div class="header__info">
+                <a class="header__logo" href="./">
+                    <img src="./img/header-logo.svg" alt="">
+                </a>
+                <form class="search-form header__line-el header__search-form">
+    <input class="search-form__input" type="text" placeholder="Поиск по каталогу">
+    <button type="submit" class="search-form__btn">
+        <img src="./img/header-search-logo.svg" alt="">
+    </button>
+</form>
+
+                <a class="header__tel header__info-el" href="tel:91-11-07">
+                    <div class="header__tel-logo">
+                        <img src="./img/header-phone-logo.svg" alt="">
+                    </div>
+                    <span class="header__tel-number">
+                        91-11-07
+                    </span>
+                </a>
+                <div class="header__schedule header__info-el">
+                    <div class="header__schedule-logo">
+                        <img src="./img/header-clock-logo.svg" alt="">
+                    </div>
+                    <div class="header__schedule-text">
+                        Пн-Вс 8:00—20:00
+                    </div>
+                </div>
+                <a href="./" class="header__cart header__info-el">
+                    <div class="header__cart-logo">
+                        <img src="./img/header-cart-logo.svg" alt="">
+                    </div>
+                    <div class="header__cart-count">
+                        0
+                    </div>
+                    <div class="header__cart-text">
+                        Корзина пуста
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="header_mobile">
+            <div class="header__line">
+                <a class="header__tel header__1line-el" href="tel:91-11-07">
+                    <div class="header__tel-logo">
+                        <img src="./img/header-phone-logo.svg" alt="">
+                    </div>
+                    <span class="header__tel-number">
+                        91-11-07
+                    </span>
+                </a>
+                <div class="separator"></div>
+                <div class="header__schedule header__1line-el">
+                    <div class="header__schedule-logo">
+                        <img src="./img/header-clock-logo.svg" alt="">
+                    </div>
+                    <div class="header__schedule-text">
+                        Пн-Вс 8:00—20:00
+                    </div>
+                </div>
+            </div>
+            <div class="header__line">
+                <a href="./" class="header__line-el header__link">Мой профиль</a>
+                <a href="./" class="header__line-el header__link">Мои заказы</a>
+                <form class="search-form header__line-el header__search-form">
+    <input class="search-form__input" type="text" placeholder="Поиск по каталогу">
+    <button type="submit" class="search-form__btn">
+        <img src="./img/header-search-logo.svg" alt="">
+    </button>
+</form>
+                <a href="./" class="header__line-el header__link">
+                    <img src="./img/header-heart-logo.svg" alt="">
+                </a>
+                <a href="./" class="header__line-el header__link">
+                    <img class="header__line-el" src="./img/header-connection-logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__line">
+                <a class="header__logo" href="./">
+                    <img src="./img/header-logo.svg" alt="">
+                </a>
+                <a href="./" class="header__cart header__info-el">
+                    <div class="header__cart-logo">
+                        <img src="./img/header-cart-logo.svg" alt="">
+                    </div>
+                    <div class="header__cart-count">
+                        0
+                    </div>
+                    <div class="header__cart-text">
+                        Корзина пуста
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+    <div class="main-menu-grid">
+        <div class="main-menu">
+    <div id="main-menu-button" class="main-menu__button">
+        <div class="main-menu__text">
+            Каталог товаров
+        </div>
+        <div class="main-menu__burger">
+            <img src="./img/main-menu-burger-icon.svg" alt="">
+        </div>
+    </div>
+    <div id="main-menu-list" class="main-menu__list">
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-1.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Чай и Кофе
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-2.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Кондитерская
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-3.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Выпечка, хлебные изделия
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-4.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Сухофрукты
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-5.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Чипсы, семечки, сухари, орехи
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-6.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Для диабетиков
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-7.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Детское питание
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-8.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Бакалея
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-9.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Японская кухня
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-10.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Овощи фрукты
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-11.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Молочная продукция
+            </div>
+        </a>
+        <a class="main-menu__list-el" href="./">
+            <div class="main-menu__list-el-icon">
+                <img src="./img/main-menu-icon-12.svg" alt="">
+            </div>
+            <div class="main-menu__list-el-text">
+                Мясная гастрономия
+            </div>
+        </a>
+    </div>
+</div>
+        <div class="main-menu-grid__right">
+            <div class="main-menu-grid__top-menu">
+                <a href="./" class="main-menu-grid__top-menu-el">
+                    <div class="main-menu-grid__top-menu-el-count">
+                        0
+                    </div>
+                    <div class="main-menu-grid__top-menu-el-text">
+                        Избранное
+                    </div>
+                </a>
+                <a href="./" class="main-menu-grid__top-menu-el">
+                    <div class="main-menu-grid__top-menu-el-count">
+                        5
+                    </div>
+                    <div class="main-menu-grid__top-menu-el-text">
+                        Сравнение
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+        <div class="container">
+    <div class="breadcrumbs">
+        <div class="breadcrumbs__list">
+            
+            <div class="breadcrumbs__el">
+                <a href="./" class="breadcrumbs__el-link">
+                    Главная страница
+                </a>
+            </div>
+            
+            <div class="breadcrumbs__el">
+                <a href="./" class="breadcrumbs__el-link">
+                    Оформление заказа
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+    <div class="order">
+        <div class="order__head">
+            <div class="order__title">
+                Оформление заказа
+            </div>
+            <div class="order__price">
+                <span>Товаров на сумму:</span>
+                <span class="order__price-num">120 000 Р</span>
+            </div>
+        </div>
+        <form class="order-form">
+            <div class="order-form__buyer">
+                <label class="custom-radio">
+                    <input type="radio" name="buyer">
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Я новый покупатель
+                    </div>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="buyer">
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Я уже заказывал ранее и у меня есть аккаунт
+                    </div>
+                </label>
+            </div>
+            <div class="order-form__contact">
+                <div class="order-form__block-title">
+                    Контактная информация
+                </div>
+                <div class="order-form__input-list">
+                    <div class="order-form__input">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="order-form__input">
+                        <label>Мобильный телефон</label>
+                        <input type="text" placeholder="Ваш нормер">
+                    </div>
+                </div>
+            </div>
+            <div class="order-form__address">
+                <div class="order-form__block-title">
+                    Адрес доставки
+                </div>
+                <div class="order-form__input-list">
+                    <div class="order-form__input">
+                        <label>Город</label>
+                        <input type="text" placeholder="Город">
+                    </div>
+                    <div class="order-form__input">
+                        <label>Улица, дом, квартира</label>
+                        <input type="text" placeholder="Улица, дом, квартира">
+                    </div>
+                    <div class="order-form__input compact">
+                        <label>Подъезд, этаж</label>
+                        <input type="text" placeholder="Подъезд, этаж">
+                    </div>
+                    <div class="order-form__input">
+                        <label>Регион</label>
+                        <select>
+                            <option selected disabled>Выберите регион</option>
+                            <option>Пункт 1</option>
+                            <option>Пункт 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="order-form__politics">
+                    Нажимая на кнопку подтверждения, я принимаю условия
+                    <a href="./" class="order-form__politics_green">
+                        политики обработки персональных данных
+                    </a>
+                </div>
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <div class="custom-checkbox__label">
+                        Зарегистрироваться как постоянный покупатель
+                    </div>
+                </label>
+                <div class="order-form__reg-info">
+                    Зарегистрированные покупатели получают накопительные бонусные баллы и скидки на будущие заказы. Этот
+                    заказ добавит +0.67 баллов к вашему партнерскому бонусу.
+                </div>
+            </div>
+            <div class="order-form__delivery">
+                <div class="order-form__block-title">
+                    Доставка
+                </div>
+                <div class="delivery-box">
+                    <div class="delivery-box__head">
+                        <div class="delivery-box__title">
+                            Самовывоз
+                        </div>
+                        <div class="delivery-box__price">
+                            100 Р
+                        </div>
+                    </div>
+                    <div class="delivery-box__text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, "Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+            <div class="order-form__payment">
+                <div class="order-form__block-title">
+                    Оплата
+                </div>
+                <label class="custom-radio custom-radio_payment">
+                    <input type="radio" name="payment" checked>
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Яндекс.Деньги
+                    </div>
+                </label>
+                <label class="custom-radio custom-radio_payment">
+                    <input type="radio" name="payment">
+                    <span class="checkmark"></span>
+                    <div class="custom-radio__label">
+                        Наличными курьеру
+                    </div>
+                </label>
+            </div>
+            <div class="order-form__confirmation">
+                <div class="order-form__block-title">
+                    Подтверждение заказа
+                </div>
+                <a href="./" class="btn">
+                    Перейти к оплате
+                </a>
+                <a href="./" class="btn btn_grey">
+                    Вернуться назад
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__list">
+            <div class="footer__group">
+                <div class="footer__group-title">
+                    Страницы
+                </div>
+                <div class="footer__group-list">
+                    <a class="footer__group-list-el" href="./">
+                        Как сделать заказ
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        Условия доставки
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+            <div class="footer__group">
+                <div class="footer__group-title">
+                    Личный кабинет
+                </div>
+                <div class="footer__group-list">
+                    <a class="footer__group-list-el" href="./">
+                        Мои заказы
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        Мой профиль
+                    </a>
+                </div>
+            </div>
+            <div class="footer__group">
+                <div class="footer__group-title">
+                    Контакты
+                </div>
+                <div class="footer__group-list">
+                    <a class="footer__group-list-el" href="tel:91-11-07">
+                        91-11-07
+                    </a>
+                    <a class="footer__group-list-el" href="./">
+                        WApp: 8(988)29-111-07
+                    </a>
+                    <a class="footer__group-list-el" href="mailto:info@shop-dobro.ru">
+                        info@shop-dobro.ru
+                    </a>
+                </div>
+            </div>
+            <div class="footer__logos">
+                <a href="./" class="footer__market-logo">
+                    <img src="./img/app-stop-logo.svg" alt="">
+                </a>
+                <a href="./" class="footer__market-logo">
+                    <img src="./img/google-play-logo.svg" alt="">
+                </a>
+                <a class="footer__main-logo" href="./">
+                    <img src="./img/header-logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            © 2020 ДОБРО
+        </div>
+    </div>
+</footer>
+</div>
+<!-- libs  -->
+<script src="./assets/static/jquery-3.4.1.min.js"></script>
+<!-- libs  -->
+<script src="./vendors.js"></script>
+
+<!-- main -->
+<script src="./script.js"></script>
+</body>
+
+</html>
