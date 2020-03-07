@@ -152,12 +152,56 @@
   border-radius: 4px;
   background: #B2DB11;
 }
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Light.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Semibold.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Semibold.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/ProximaNova/ProximaNova-Bold.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+}
+
 * {
   box-sizing: border-box;
 }
 
 * {
   outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 html,
@@ -171,15 +215,6 @@ body {
   font-weight: normal;
   min-height: 100%;
   height: 1px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
 }
 
 .dn {
@@ -314,41 +349,6 @@ button:focus {
   background: #a8a8a8;
 }
 
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 300;
-  src: url("./assets/fonts/ProximaNova/ProximaNova-Light.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./assets/fonts/ProximaNova/ProximaNova-Regular.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 500;
-  src: url("./assets/fonts/ProximaNova/ProximaNova-Semibold.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 600;
-  src: url("./assets/fonts/ProximaNova/ProximaNova-Semibold.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./assets/fonts/ProximaNova/ProximaNova-Bold.eot?") format("eot"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype"), url("./assets/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
-}
-
 h2 {
   font: normal 300 24px/29px "Proxima Nova";
   text-align: center;
@@ -376,6 +376,23 @@ h2 {
   }
 }
 
+.cart-page .main-menu__list {
+  display: none;
+}
+
+.cart-page .interesting-products {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .cart-page .main-menu-grid {
+    margin-top: 15px;
+  }
+
+  .cart-page .breadcrumbs {
+    border-bottom: 0;
+  }
+}
 .catalog-page .main-menu-grid {
   margin-top: 10px;
 }
@@ -2128,6 +2145,8 @@ h2 {
 
 .product-reviews__head {
   margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .product-reviews .rating-box {
@@ -2167,9 +2186,8 @@ h2 {
   max-width: 280px;
 }
 
-.product-review {
-  padding-top: 10px;
-  border-top: 1px solid #EEEEEE;
+.product-review + .product-review {
+  margin-top: 15px;
 }
 
 .product-review__photo {
@@ -2356,6 +2374,7 @@ h2 {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-bottom: 15px;
     margin-bottom: 15px;
   }
 
@@ -2383,10 +2402,6 @@ h2 {
 
   .product-reviews__show-more {
     margin: 0 auto 0 15px;
-  }
-
-  .product-review {
-    padding-top: 15px;
   }
 
   .product-review__photo img {
@@ -3189,21 +3204,4 @@ h2 {
   src: local("Proxima Nova Black Italic"), local("ProximaNova-BlackIt"), url("ProximaNova-BlackIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-BlackIt.woff") format("woff"), url("ProximaNova-BlackIt.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
-}
-.cart-page .main-menu__list {
-  display: none;
-}
-
-.cart-page .interesting-products {
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .cart-page .main-menu-grid {
-    margin-top: 15px;
-  }
-
-  .cart-page .breadcrumbs {
-    border-bottom: 0;
-  }
 }

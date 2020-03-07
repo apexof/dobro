@@ -177,6 +177,8 @@
     }
     &__head {
         margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #EEEEEE;
     }
     .rating-box{
         align-items: flex-end;
@@ -214,8 +216,9 @@
 }
 
 .product-review{
-    padding-top: 10px;
-    border-top: 1px solid #EEEEEE;
+    &+.product-review{
+        margin-top: 15px;
+    }
     &__head {
     }
     &__photo {
@@ -390,6 +393,7 @@
         &__head {
             display: flex;
             align-items: center;
+            padding-bottom: 15px;
             margin-bottom: 15px;
         }
         .rating-box{  
@@ -420,7 +424,6 @@
     }
     
     .product-review{
-        padding-top: 15px;    
         &__head {
         }
         &__photo {
