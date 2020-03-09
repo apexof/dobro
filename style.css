@@ -263,6 +263,7 @@ body {
 .page .container {
   padding-right: 15px;
   padding-left: 15px;
+  position: relative;
 }
 
 @media (min-width: 576px) {
@@ -555,7 +556,7 @@ h2 {
   background: #EEEEEE;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 66px;
   bottom: 0;
   right: 0;
   z-index: 90;
@@ -564,7 +565,7 @@ h2 {
 }
 
 .burger-menu__content {
-  padding: 93px 15px 14px;
+  padding: 27px 15px 14px;
   min-height: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2570,6 +2571,8 @@ h2 {
   width: 100%;
   display: none;
   z-index: 100;
+  margin: 0 -15px;
+  padding: 0 15px;
 }
 
 .sticky-header__logo img {
@@ -2924,6 +2927,55 @@ h2 {
 
 .search-form__input {
   display: none;
+  position: absolute;
+  right: 0;
+  top: 24px;
+}
+
+.search-form__input input {
+  display: block;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  height: 44px;
+  background: #FFFFFF;
+  border: 0;
+  border-radius: 4px;
+  color: #000;
+  padding: 0 38px 0 13px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.search-form__input input::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.search-form__input input:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.search-form__input input::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.search-form__input input::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .search-form__btn {
@@ -2932,6 +2984,7 @@ h2 {
   padding: 0;
   position: absolute;
   top: calc(50% - 8px);
+  right: 15px;
 }
 
 .search-form__btn img {
@@ -2940,54 +2993,25 @@ h2 {
   width: 16px;
 }
 
+.search-form__toggle img {
+  display: block;
+  height: 17px;
+}
+
 @media (min-width: 992px) {
   .search-form__input {
-    display: block;
-    height: 44px;
-    background: #FFFFFF;
     border: 1px solid #C1C1C1;
+    position: static;
     border-radius: 4px;
-    color: #000;
-    padding: 0 38px 0 13px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    display: block !important;
   }
 
-  .search-form__input::-webkit-input-placeholder {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    opacity: 0.3;
+  .search-form__input input {
+    box-shadow: none;
   }
 
-  .search-form__input:-ms-input-placeholder {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    opacity: 0.3;
-  }
-
-  .search-form__input::-ms-input-placeholder {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    opacity: 0.3;
-  }
-
-  .search-form__input::placeholder {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    opacity: 0.3;
-  }
-
-  .search-form__btn {
-    right: 14px;
+  .search-form__toggle {
+    display: none;
   }
 }
 @font-face {
@@ -3360,4 +3384,69 @@ h2 {
   src: local("Proxima Nova Black Italic"), local("ProximaNova-BlackIt"), url("ProximaNova-BlackIt.eot?#iefix") format("embedded-opentype"), url("ProximaNova-BlackIt.woff") format("woff"), url("ProximaNova-BlackIt.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
+}
+.cart-sticky-box {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cart-sticky {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 48px;
+    padding: 0 13px;
+    background: #B2DB11;
+  }
+
+  .cart-sticky-box {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .cart-sticky__logo {
+    display: inline-block;
+  }
+
+  .cart-sticky__logo img {
+    display: block;
+  }
+
+  .cart-sticky__count {
+    background: #FFFFFF;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 12px;
+    padding: 0 6px;
+    line-height: 15px;
+    color: #7F8285;
+  }
+
+  .cart-sticky__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
 }
