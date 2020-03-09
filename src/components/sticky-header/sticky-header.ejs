@@ -1,14 +1,10 @@
 <div class="sticky-header" id="sticky-header">
-    <div class="container">
-        <div class="sticky-header__content">
-
-            <div class="sticky-header__logo">
-                <img src="./img/header-logo.svg" alt="">
-            </div>
-            <%- include('../cart-info/cart-info', {cssClass: "sticky-header__cart"}); %>
-            <%- include('../burger-menu/burger-button'); %>
-
+    <div class="sticky-header__content">
+        <div class="sticky-header__logo">
+            <img src="./img/header-logo.svg" alt="">
         </div>
+        <%- include('../cart-info/cart-info', {cssClass: "sticky-header__cart"}); %>
+        <%- include('../burger-menu/burger-button'); %>
     </div>
 </div>
 <%- include('../burger-menu/burger-menu'); %>

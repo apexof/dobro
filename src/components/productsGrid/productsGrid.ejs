@@ -1,10 +1,9 @@
-<div class="container">
-    <div class="products-grid <%=cssClass%>">
-        <h2 class="products-grid__title"><%=title%></h2>
-        <div class="products-grid__list">
-            <% products[arrayItems].forEach(function(product, i){ %>
-            <% if (maxCount > i) { %>
-            <%- include('../../els/product/product', {
+<div class="products-grid <%=cssClass%>">
+    <h2 class="products-grid__title"><%=title%></h2>
+    <div class="products-grid__list">
+        <% products[arrayItems].forEach(function(product, i){ %>
+        <% if (maxCount > i) { %>
+        <%- include('../../els/product/product', {
                         name: product.name,
                         price: product.price,
                         oldPrice: product.oldPrice,
@@ -12,8 +11,7 @@
                         inStock: product.inStock,
                         weight: product.weight,
                     }); %>
-            <% } %>
-            <% }); %>
-        </div>
+        <% } %>
+        <% }); %>
     </div>
 </div>

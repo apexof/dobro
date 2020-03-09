@@ -61,6 +61,7 @@ html, body {
     .container {
         padding-right: $mobilePadding;
         padding-left: $mobilePadding;
+        position: relative;
         @media (min-width: 576px) {
             max-width: unset;
         }

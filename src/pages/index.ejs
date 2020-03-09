@@ -4,12 +4,15 @@
 
 <body>
     <div class="page main-page">
-        <%- include('../components/sticky-header/sticky-header'); %>
-        <%- include('../components/header/header'); %>
-        <%- include('../components/main-menu-grid/main-menu-grid',{banner: true}); %>
-        <%- include('../components/cat-menu/cat-menu'); %>
-        <%- include('../components/newProducts/newProducts'); %>
-        <%- include('../components/help-info/help-info'); %>
-        <%- include('../components/interestingProducts/interestingProducts'); %>
-        <%- include('../components/description/description'); %>
+        <div class="container">
+            <%- include('../components/sticky-header/sticky-header'); %>
+            <%- include('../components/header/header'); %>
+            <%- include('../components/cart-sticky/cart-sticky'); %>
+            <%- include('../components/main-menu-grid/main-menu-grid',{banner: true}); %>
+            <%- include('../components/cat-menu/cat-menu'); %>
+            <%- include('../components/newProducts/newProducts'); %>
+            <%- include('../components/help-info/help-info'); %>
+            <%- include('../components/interestingProducts/interestingProducts'); %>
+            <%- include('../components/description/description'); %>
+        </div>
         <%- include('../components/footer/footer'); %>
