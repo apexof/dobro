@@ -1,0 +1,60 @@
+@import "../../vars.scss";
+
+.burger-button{
+    cursor: pointer;
+    img{
+        width: 20px;
+        display: block;
+    }
+}
+.close-burger-button{
+    display: none;
+    cursor: pointer;
+    img{
+        display: block;
+        width: 20px;
+    }
+}
+.burger-menu{
+    background: #EEEEEE;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 90;
+    display: none;
+    overflow-x: hidden;
+    &__content{
+        padding: 93px $mobilePadding 14px;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__nav{
+        padding-bottom: 25px;        
+    }
+    &__el{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        display: block;
+        text-decoration: none;
+        +.burger-menu__el{
+            margin-top: 35px;
+        }
+    }
+    &__footer{
+        border-top: 1px solid #C1C1C1;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+        .header__schedule{
+            margin-bottom: 10px;
+            
+        }
+    }
+}

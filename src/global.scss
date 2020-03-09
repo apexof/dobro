@@ -29,6 +29,10 @@ html, body {
     display: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .no-scroll-bar{
     scrollbar-width: none;
     &::-webkit-scrollbar {
