@@ -1,13 +1,11 @@
-<div class="container">
-    <div class="breadcrumbs">
-        <div class="breadcrumbs__list">
-            <% links.forEach(function(item){ %>
-            <div class="breadcrumbs__el">
-                <a href="<%=item.link%>" class="breadcrumbs__el-link">
-                    <%=item.name%>
-                </a>
-            </div>
-            <% }); %>
+<div class="breadcrumbs">
+    <div class="breadcrumbs__list">
+        <% links.forEach(function(item){ %>
+        <div class="breadcrumbs__el">
+            <a href="<%=item.link%>" class="breadcrumbs__el-link">
+                <%=item.name%>
+            </a>
         </div>
+        <% }); %>
     </div>
 </div>

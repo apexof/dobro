@@ -19,7 +19,63 @@
 
 <body>
     <div class="page order-page">
-        <header class="header">
+        <div class="container">
+            <div class="sticky-header" id="sticky-header">
+    <div class="sticky-header__content">
+        <div class="sticky-header__logo">
+            <img src="./img/header-logo.svg" alt="">
+        </div>
+        <a href="./" class="cart-info ">
+    <div class="cart-info__logo">
+        <img src="./img/header-cart-logo.svg" alt="">
+    </div>
+    <div class="cart-info__count">
+        0
+    </div>
+    <div class="cart-info__text">
+        Корзина пуста
+    </div>
+</a>
+        <div class="burger-button" id="burger-button">
+    <img src="./img/icon-burger-gray.svg" alt="">
+</div>
+<div class="close-burger-button" id="close-burger-button">
+    <img src="./img/icon-close-gray.svg" alt="">
+</div>
+    </div>
+</div>
+<div class="burger-menu" id="burger-menu">
+    <div class="burger-menu__content">
+        <nav class="burger-menu__nav">
+            <a href="./" class="burger-menu__el">Мой профиль</a>
+            <a href="./" class="burger-menu__el">Мои заказы</a>
+            <a href="./" class="burger-menu__el">Как сделать заказ</a>
+            <a href="./" class="burger-menu__el">Условия доставки</a>
+            <a href="./" class="burger-menu__el">Политика конфиденциальности</a>
+            <a href="./" class="burger-menu__el">Сравнение товаров</a>
+            <a href="./" class="burger-menu__el">Избранное</a>
+        </nav>
+        <footer class="burger-menu__footer">
+            <div class="header__schedule header__info-el">
+                <div class="header__schedule-logo">
+                    <img src="./img/header-clock-logo.svg" alt="">
+                </div>
+                <div class="header__schedule-text">
+                    Пн-Вс 8:00—20:00
+                </div>
+            </div>
+            <a class="header__tel header__info-el" href="tel:91-11-07">
+                <div class="header__tel-logo">
+                    <img src="./img/header-phone-logo.svg" alt="">
+                </div>
+                <span class="header__tel-number">
+                    91-11-07
+                </span>
+            </a>
+        </footer>
+    </div>
+</div>
+            <header class="header">
     <div class="header_desktop">
         <div class="header__menu">
             <a href="./" class="header__menu-el header__link">Как сделать заказ</a>
@@ -133,7 +189,20 @@
         </div>
     </div>
 </header>
-        <div class="main-menu-grid">
+            <div id="cart-sticky" class="cart-sticky-box">
+    <a href="./" class="cart-sticky">
+        <div class="cart-sticky__logo">
+            <img src="./img/icon-cart-white.svg" alt="">
+        </div>
+        <div class="cart-sticky__count">
+            32
+        </div>
+        <div class="cart-sticky__text">
+            3332 Р
+        </div>
+    </a>
+</div>
+            <div class="main-menu-grid">
     <div class="main-menu">
     <div id="main-menu-button" class="main-menu__button">
         <div class="main-menu__text">
@@ -264,166 +333,163 @@
         
     </div>
 </div>
-        <div class="container">
-    <div class="breadcrumbs">
-        <div class="breadcrumbs__list">
-            
-            <div class="breadcrumbs__el">
-                <a href="./" class="breadcrumbs__el-link">
-                    Главная страница
-                </a>
-            </div>
-            
-            <div class="breadcrumbs__el">
-                <a href="./" class="breadcrumbs__el-link">
-                    Оформление заказа
-                </a>
-            </div>
-            
+            <div class="breadcrumbs">
+    <div class="breadcrumbs__list">
+        
+        <div class="breadcrumbs__el">
+            <a href="./" class="breadcrumbs__el-link">
+                Главная страница
+            </a>
         </div>
+        
+        <div class="breadcrumbs__el">
+            <a href="./" class="breadcrumbs__el-link">
+                Оформление заказа
+            </a>
+        </div>
+        
     </div>
 </div>
 
-        <div class="container">
-    <div class="order">
-        <div class="order__head">
-            <div class="order__title">
-                Оформление заказа
+            <div class="order">
+    <div class="order__head">
+        <div class="order__title">
+            Оформление заказа
+        </div>
+        <div class="order__price">
+            <span>Товаров на сумму:</span>
+            <span class="order__price-num">120 000 Р</span>
+        </div>
+    </div>
+    <form class="order-form">
+        <div class="order-form__buyer">
+            <label class="custom-radio">
+                <input type="radio" name="buyer">
+                <span class="checkmark"></span>
+                <div class="custom-radio__label">
+                    Я новый покупатель
+                </div>
+            </label>
+            <label class="custom-radio">
+                <input type="radio" name="buyer">
+                <span class="checkmark"></span>
+                <div class="custom-radio__label">
+                    Я уже заказывал ранее и у меня есть аккаунт
+                </div>
+            </label>
+        </div>
+        <div class="order-form__contact">
+            <div class="order-form__block-title">
+                Контактная информация
             </div>
-            <div class="order__price">
-                <span>Товаров на сумму:</span>
-                <span class="order__price-num">120 000 Р</span>
+            <div class="order-form__input-list">
+                <div class="order-form__input">
+                    <label>Ваше имя</label>
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="order-form__input">
+                    <label>Мобильный телефон</label>
+                    <input type="text" placeholder="Ваш нормер">
+                </div>
             </div>
         </div>
-        <form class="order-form">
-            <div class="order-form__buyer">
-                <label class="custom-radio">
-                    <input type="radio" name="buyer">
-                    <span class="checkmark"></span>
-                    <div class="custom-radio__label">
-                        Я новый покупатель
-                    </div>
-                </label>
-                <label class="custom-radio">
-                    <input type="radio" name="buyer">
-                    <span class="checkmark"></span>
-                    <div class="custom-radio__label">
-                        Я уже заказывал ранее и у меня есть аккаунт
-                    </div>
-                </label>
+        <div class="order-form__address">
+            <div class="order-form__block-title">
+                Адрес доставки
             </div>
-            <div class="order-form__contact">
-                <div class="order-form__block-title">
-                    Контактная информация
+            <div class="order-form__input-list">
+                <div class="order-form__input">
+                    <label>Город</label>
+                    <input type="text" placeholder="Город">
                 </div>
-                <div class="order-form__input-list">
-                    <div class="order-form__input">
-                        <label>Ваше имя</label>
-                        <input type="text" placeholder="Имя">
-                    </div>
-                    <div class="order-form__input">
-                        <label>Мобильный телефон</label>
-                        <input type="text" placeholder="Ваш нормер">
-                    </div>
+                <div class="order-form__input">
+                    <label>Улица, дом, квартира</label>
+                    <input type="text" placeholder="Улица, дом, квартира">
+                </div>
+                <div class="order-form__input compact">
+                    <label>Подъезд, этаж</label>
+                    <input type="text" placeholder="Подъезд, этаж">
+                </div>
+                <div class="order-form__input">
+                    <label>Регион</label>
+                    <select id="order-form-select-region">
+                        <option selected disabled>Выберите регион</option>
+                        <option>Пункт 1</option>
+                        <option>Пункт 2</option>
+                    </select>
                 </div>
             </div>
-            <div class="order-form__address">
-                <div class="order-form__block-title">
-                    Адрес доставки
-                </div>
-                <div class="order-form__input-list">
-                    <div class="order-form__input">
-                        <label>Город</label>
-                        <input type="text" placeholder="Город">
-                    </div>
-                    <div class="order-form__input">
-                        <label>Улица, дом, квартира</label>
-                        <input type="text" placeholder="Улица, дом, квартира">
-                    </div>
-                    <div class="order-form__input compact">
-                        <label>Подъезд, этаж</label>
-                        <input type="text" placeholder="Подъезд, этаж">
-                    </div>
-                    <div class="order-form__input">
-                        <label>Регион</label>
-                        <select id="order-form-select-region">
-                            <option selected disabled>Выберите регион</option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="order-form__politics">
-                    Нажимая на кнопку подтверждения, я принимаю условия
-                    <a href="./" class="order-form__politics_green">
-                        политики обработки персональных данных
-                    </a>
-                </div>
-                <label class="custom-checkbox">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <div class="custom-checkbox__label">
-                        Зарегистрироваться как постоянный покупатель
-                    </div>
-                </label>
-                <div class="order-form__reg-info">
-                    Зарегистрированные покупатели получают накопительные бонусные баллы и скидки на будущие заказы. Этот
-                    заказ добавит +0.67 баллов к вашему партнерскому бонусу.
-                </div>
-            </div>
-            <div class="order-form__delivery">
-                <div class="order-form__block-title">
-                    Доставка
-                </div>
-                <div class="delivery-box">
-                    <div class="delivery-box__head">
-                        <div class="delivery-box__title">
-                            Самовывоз
-                        </div>
-                        <div class="delivery-box__price">
-                            100 Р
-                        </div>
-                    </div>
-                    <div class="delivery-box__text">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, "Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor
-                    </div>
-                </div>
-            </div>
-            <div class="order-form__payment">
-                <div class="order-form__block-title">
-                    Оплата
-                </div>
-                <label class="custom-radio custom-radio_payment">
-                    <input type="radio" name="payment" checked>
-                    <span class="checkmark"></span>
-                    <div class="custom-radio__label">
-                        Яндекс.Деньги
-                    </div>
-                </label>
-                <label class="custom-radio custom-radio_payment">
-                    <input type="radio" name="payment">
-                    <span class="checkmark"></span>
-                    <div class="custom-radio__label">
-                        Наличными курьеру
-                    </div>
-                </label>
-            </div>
-            <div class="order-form__confirmation">
-                <div class="order-form__block-title">
-                    Подтверждение заказа
-                </div>
-                <a href="./" class="btn">
-                    Перейти к оплате
-                </a>
-                <a href="./" class="btn btn_grey">
-                    Вернуться назад
+            <div class="order-form__politics">
+                Нажимая на кнопку подтверждения, я принимаю условия
+                <a href="./" class="order-form__politics_green">
+                    политики обработки персональных данных
                 </a>
             </div>
-        </form>
-    </div>
+            <label class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <div class="custom-checkbox__label">
+                    Зарегистрироваться как постоянный покупатель
+                </div>
+            </label>
+            <div class="order-form__reg-info">
+                Зарегистрированные покупатели получают накопительные бонусные баллы и скидки на будущие заказы. Этот
+                заказ добавит +0.67 баллов к вашему партнерскому бонусу.
+            </div>
+        </div>
+        <div class="order-form__delivery">
+            <div class="order-form__block-title">
+                Доставка
+            </div>
+            <div class="delivery-box">
+                <div class="delivery-box__head">
+                    <div class="delivery-box__title">
+                        Самовывоз
+                    </div>
+                    <div class="delivery-box__price">
+                        100 Р
+                    </div>
+                </div>
+                <div class="delivery-box__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor "Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, "Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor
+                </div>
+            </div>
+        </div>
+        <div class="order-form__payment">
+            <div class="order-form__block-title">
+                Оплата
+            </div>
+            <label class="custom-radio custom-radio_payment">
+                <input type="radio" name="payment" checked>
+                <span class="checkmark"></span>
+                <div class="custom-radio__label">
+                    Яндекс.Деньги
+                </div>
+            </label>
+            <label class="custom-radio custom-radio_payment">
+                <input type="radio" name="payment">
+                <span class="checkmark"></span>
+                <div class="custom-radio__label">
+                    Наличными курьеру
+                </div>
+            </label>
+        </div>
+        <div class="order-form__confirmation">
+            <div class="order-form__block-title">
+                Подтверждение заказа
+            </div>
+            <a href="./" class="btn">
+                Перейти к оплате
+            </a>
+            <a href="./" class="btn btn_grey">
+                Вернуться назад
+            </a>
+        </div>
+    </form>
 </div>
+        </div>
         <footer class="footer">
     <div class="container">
         <div class="footer__list">

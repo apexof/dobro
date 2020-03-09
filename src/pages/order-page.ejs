@@ -4,9 +4,12 @@
 
 <body>
     <div class="page order-page">
-        <%- include('../components/header/header'); %>
-        <%- include('../components/main-menu-grid/main-menu-grid',{banner: false}); %>
-        <%- include('../els/breadcrumbs/breadcrumbs', {
+        <div class="container">
+            <%- include('../components/sticky-header/sticky-header'); %>
+            <%- include('../components/header/header'); %>
+            <%- include('../components/cart-sticky/cart-sticky'); %>
+            <%- include('../components/main-menu-grid/main-menu-grid',{banner: false}); %>
+            <%- include('../els/breadcrumbs/breadcrumbs', {
             links: [
                 {
                     name: "Главная страница",
@@ -19,5 +22,6 @@
             ]
         });  %>
 
-        <%- include('../components/order/order'); %>
+            <%- include('../components/order/order'); %>
+        </div>
         <%- include('../components/footer/footer'); %>
