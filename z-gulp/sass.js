@@ -24,7 +24,7 @@ task("sass", () => src(["./src/**/*.scss", "!./src/assets/libs/**/*.scss"])
     .pipe($.concat("style.css"))
     .pipe(dest("./build")));
 
-task("sass-vendors", () => src("./src/assets/libs/**/*.scss")
+task("sass-vendors", () => src("./src/assets/libs/**/*.{scss,css}")
     .pipe($.sass())
     .pipe($.csso())
     .pipe($.concat("vendors.css"))
