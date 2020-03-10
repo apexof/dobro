@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="./assets/static/favicon.ico">
 
     <!-- main -->
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./vendors.css">
+    <link rel="stylesheet" href="./style.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,500i,700i,900&display=swap&subset=cyrillic"
@@ -19,7 +19,8 @@
 
 <body>
     <div class="page catalog-page">
-        <header class="header">
+        <div class="container">
+            <header class="header">
     <div class="header_desktop">
         <div class="header__menu">
             <a href="./" class="header__menu-el header__link">Как сделать заказ</a>
@@ -133,7 +134,7 @@
         </div>
     </div>
 </header>
-        <div class="main-menu-grid">
+            <div class="main-menu-grid">
     <div class="main-menu">
     <div id="main-menu-button" class="main-menu__button">
         <div class="main-menu__text">
@@ -264,7 +265,7 @@
         
     </div>
 </div>
-        <div class="breadcrumbs">
+            <div class="breadcrumbs">
     <div class="breadcrumbs__list">
         
         <div class="breadcrumbs__el">
@@ -281,7 +282,612 @@
         
     </div>
 </div>
-        <div class="description">
+            <div class="catalog">
+    <div class="catalog__header">
+        <div class="catalog__title">
+            Каталог товаров
+        </div>
+        <div class="catalog-filter">
+            <div class="catalog__label">
+                Фильтровать по:
+            </div>
+            <div class="catalog-filter__btn btn">
+                Цене
+            </div>
+            <div class="catalog-filter-modal">
+                <div class="catalog-filter-modal__triangle"></div>
+                <div class="catalog-filter-modal__input">
+                    <label>Цена: от</label>
+                    <input type="number">
+                </div>
+                <div class="catalog-filter-modal__input">
+                    <label>до</label>
+                    <input type="number">
+                </div>
+                <div class="catalog-filter-modal-footer">
+                    <div class="catalog-filter-modal-footer__text">
+                        Найдено: 145
+                    </div>
+                    <button class="catalog-filter-modal-footer__btn btn">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-sort">
+            <label class="catalog__label">Сортировать:</label>
+            <div class="catalog-sort__select">
+                <select class="select2" name="catalog-sort">
+                    <option value="1">По популярности</option>
+                    <option value="2">По цене</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="catalog__content">
+        <div class="catalog-nav">
+            <a class="catalog-nav__el" href="./">
+                Чай и Кофе
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Кондитерская
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Выпечка, хлебные изделия
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Сухофрукты
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Чипсы, семечки, сухари, орехи
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Для диабетиков
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Детское питание
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Бакалея
+            </a>
+            <a class="catalog-nav__el" href="./">
+
+                Японская кухня
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Овощи фрукты
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Молочная продукция
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Мясная гастрономия
+            </a>
+        </div>
+        <div class="products-grid new-products">
+    
+    <div class="products-grid__list">
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-1.webp" 
+        srcset="./img/previews/newProduct-1.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-1.svg" 
+        data-src="./img/newProduct-1.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Сыр плав ХОХЛАНД Фетакса">
+            Сыр плав ХОХЛАНД Фетакса
+            
+            <span class="product__name-weight">200гр/16шт</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                109 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-2.webp" 
+        srcset="./img/previews/newProduct-2.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-2.svg" 
+        data-src="./img/newProduct-2.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        
+        <div class="product__in-stock product__in-stock_false">
+            Нет в наличии
+        </div>
+        
+        <a href="./" class="product__name" title="Ролл Цезарь курица">
+            Ролл Цезарь курица
+            
+            <span class="product__name-weight">210г</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-3.webp" 
+        srcset="./img/previews/newProduct-3.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-3.svg" 
+        data-src="./img/newProduct-3.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Халва АЗОВСКАЯ подсол изюм">
+            Халва АЗОВСКАЯ подсол изюм
+            
+            <span class="product__name-weight">5,6кг шт 16шт</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-4.webp" 
+        srcset="./img/previews/newProduct-4.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-4.svg" 
+        data-src="./img/newProduct-4.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Вафли КОРОВКА топл молоко">
+            Вафли КОРОВКА топл молоко
+            
+            <span class="product__name-weight">210г</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-5.webp" 
+        srcset="./img/previews/newProduct-5.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-5.svg" 
+        data-src="./img/newProduct-5.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Крекер ТУК сыр">
+            Крекер ТУК сыр
+            
+            <span class="product__name-weight">210г</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-6.webp" 
+        srcset="./img/previews/newProduct-6.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-6.svg" 
+        data-src="./img/newProduct-6.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Чипсы ЛЕЙС рифлен сметана/лук">
+            Чипсы ЛЕЙС рифлен сметана/лук
+            
+            <span class="product__name-weight">210г</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-7.webp" 
+        srcset="./img/previews/newProduct-7.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-7.svg" 
+        data-src="./img/newProduct-7.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Пюре АГУША ябл/банан ст/б">
+            Пюре АГУША ябл/банан ст/б
+            
+            <span class="product__name-weight">210г</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        <div class="product-box">
+    <div class="product">
+        <div class="product__img">
+            <picture>
+    <source 
+        type="image/webp" 
+        data-srcset="./img/webp/newProduct-8.webp" 
+        srcset="./img/previews/newProduct-8.svg">
+    <img 
+        class="lazy img-box" 
+        src="./img/previews/newProduct-8.svg" 
+        data-src="./img/newProduct-8.jpg" 
+        alt>
+</picture>
+        </div>
+        <div class="rating-box">
+            <div class="rating-box__stars">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+                <img src="./img/product-rating-star.svg" alt="">
+            </div>
+            <a href="./" class="rating-box__count">
+                1
+            </a>
+            <a href="./" class="rating-box__icon heart">
+                <img src="./img/header-heart-logo.svg" alt="">
+            </a>
+            <a href="./" class="rating-box__icon">
+                <img src="./img/header-connection-logo.svg" alt="">
+            </a>
+        </div>
+        
+        <div class="product__in-stock">
+            В наличии
+        </div>
+        
+        
+        <a href="./" class="product__name" title="Сок БЛ виноград осв">
+            Сок БЛ виноград осв
+            
+            <span class="product__name-weight">0,2л</span>
+            
+        </a>
+        <div class="product__price">
+            <div class="product__price-current">
+                108 Р
+            </div>
+            <div class="product__price-old">
+                299 Р
+            </div>
+            <div class="product__price-cart">
+                <img src="./img/shopping-cart.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+        
+        
+    </div>
+</div>
+
+    </div>
+    <div class="catalog-paginate">
+        <div class="catalog-paginate__control">
+            <img src="./img/icon-prev-page-gray.svg" alt="">
+        </div>
+        <div class="catalog-paginate__page">
+            ...
+        </div>
+        <div class="catalog-paginate__page">
+            2
+        </div>
+        <div class="catalog-paginate__page">
+            3
+        </div>
+        <div class="catalog-paginate__page">
+            4
+        </div>
+        <div class="catalog-paginate__page catalog-paginate__page_active">
+            5
+        </div>
+        <div class="catalog-paginate__page">
+            ...
+        </div>
+        <div class="catalog-paginate__control">
+            <img src="./img/icon-next-page-gray.svg" alt="">
+        </div>
+    </div>
+</div>
+            <div class="description">
     <div class="description__text">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -305,6 +911,7 @@
         anim id est laborum.
     </div>
 </div>
+        </div>
         <footer class="footer">
     <div class="container">
         <div class="footer__list">

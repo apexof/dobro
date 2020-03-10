@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="./assets/static/favicon.ico">
 
     <!-- main -->
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./vendors.css">
+    <link rel="stylesheet" href="./style.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,500i,700i,900&display=swap&subset=cyrillic"
@@ -412,10 +412,10 @@
                 </div>
                 <div class="order-form__input">
                     <label>Регион</label>
-                    <select id="order-form-select-region">
-                        <option selected disabled>Выберите регион</option>
-                        <option>Пункт 1</option>
-                        <option>Пункт 2</option>
+                    <select class="select2" name="region">
+                        <option value="0" selected disabled>Выберите регион</option>
+                        <option value="1">Пункт 1</option>
+                        <option value="2">Пункт 2</option>
                     </select>
                 </div>
             </div>
