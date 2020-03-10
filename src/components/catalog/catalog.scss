@@ -1,0 +1,256 @@
+.catalog{
+    &__header{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #EEEEEE;
+        margin-bottom: 10px;
+    }
+    &-nav{
+        display: none;
+    }
+    &__label{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        white-space: nowrap;
+    }
+    &-filter{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        position: relative;
+        &__btn{
+            margin-left: 19px;
+            border: 2px solid #A3C715;
+            -webkit-user-select: none;        
+            -moz-user-select: none;        
+            -ms-user-select: none;
+        }
+        &-modal{
+            position: absolute;
+            top: 74px;
+            left: 128px;
+            max-width: 287px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            z-index: 100;
+            display: none;
+            box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+            -webkit-user-select: none;        
+            -moz-user-select: none;        
+            -ms-user-select: none;
+            &__triangle{
+                position: absolute;
+                left: 20px;
+                top: -5px;
+                width: 20px;
+                height: 20px;
+                background: #FFFFFF;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &__input{
+                +.catalog-filter-modal__input{
+                    margin-top: 5px;
+                }
+                label{
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #7B7B7B;
+                    text-align: left;
+                    display: block;
+                    margin-bottom: 2px;
+                }
+                input{
+                    padding: 0 8px; 
+                    background: #EEEEEE;
+                    border: 1px solid #C1C1C1;
+                    height: 44px;
+                    width: 100%;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                }  
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                /* Firefox */
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }              
+            }    
+            &-footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 18px 20px 0;
+                margin: 18px -20px 0;
+                border-top: 1px solid #EEE;
+                &__text{
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #7B7B7B;
+                }
+            }
+        }
+    }
+    &__title{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        white-space: nowrap;
+    }
+    &-sort{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        label{
+            margin-right: 19px;
+        }
+        &__select{
+            max-width: 178px;   
+            width: 100%;
+        }
+    }
+    &-paginate{
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 10px auto 0;
+        height: 34px;
+        position: relative;
+        left: 50%; 
+        transform: translateX(-50%); 
+        &__control,&__page{
+            display: inline-block;
+            line-height: 34px;
+            vertical-align: middle;
+            height: 100%;
+            cursor: pointer;                      
+        }
+        &__control{
+            padding: 0 15px;
+            img{
+                display: inline-block;
+            }
+            &:first-child{
+                border-right: 1px solid #C1C1C1;
+            }
+            &:last-child{
+                border-left: 1px solid #C1C1C1;
+            }
+        }
+        &__page{
+            font-weight: 500;
+            font-size: 12px;
+            color: #7B7B7B;
+            padding: 0 9px;
+            &_active{
+                background: #C1C1C1;
+                color: #fff;
+            }
+            &:hover{
+                background: #C1C1C1;
+                color: #fff;
+            }  
+        }
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    .catalog{
+        &__content{
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px solid #EEEEEE;
+            padding-bottom: 20px;
+        }
+        &-nav{
+            display: block;
+            padding: 13px 0;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            margin-right: 39px;
+            &__el{
+                display: block;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(0,0,0, .8);
+                padding: 7px 20px;
+                white-space: nowrap;
+                &:hover{
+                    background: rgba(178, 219, 17, .4);
+                }
+                +.catalog-nav__el{
+                }
+            }
+        }
+        &__label{       
+        }
+        .product{
+            max-width: unset;
+            &-box{
+                width: 50%;
+            }
+        }
+        &-paginate{
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .catalog{
+        &__header{
+            padding-bottom: 25px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        &__title{  
+            font-weight: 300;
+            font-size: 44px;
+            line-height: 54px;
+        }
+        &-filter{
+            margin: 0 auto 0 30px;
+            width: 100%;
+            &-modal{
+                width: 287px;
+            }
+            &__btn{          
+            }
+        }
+
+        &-sort{
+            width: auto;
+            label{
+            }
+            &__select{   
+                width: 191px;  
+                max-width: unset;          
+            }
+        }
+        .product{
+            &-box{
+                width: 33.33%;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .catalog{
+    }
+}

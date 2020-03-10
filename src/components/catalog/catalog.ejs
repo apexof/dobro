@@ -1,0 +1,117 @@
+<div class="catalog">
+    <div class="catalog__header">
+        <div class="catalog__title">
+            Каталог товаров
+        </div>
+        <div class="catalog-filter">
+            <div class="catalog__label">
+                Фильтровать по:
+            </div>
+            <div class="catalog-filter__btn btn">
+                Цене
+            </div>
+            <div class="catalog-filter-modal">
+                <div class="catalog-filter-modal__triangle"></div>
+                <div class="catalog-filter-modal__input">
+                    <label>Цена: от</label>
+                    <input type="number">
+                </div>
+                <div class="catalog-filter-modal__input">
+                    <label>до</label>
+                    <input type="number">
+                </div>
+                <div class="catalog-filter-modal-footer">
+                    <div class="catalog-filter-modal-footer__text">
+                        Найдено: 145
+                    </div>
+                    <button class="catalog-filter-modal-footer__btn btn">
+                        Применить
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-sort">
+            <label class="catalog__label">Сортировать:</label>
+            <div class="catalog-sort__select">
+                <select class="select2" name="catalog-sort">
+                    <option value="1">По популярности</option>
+                    <option value="2">По цене</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="catalog__content">
+        <div class="catalog-nav">
+            <a class="catalog-nav__el" href="./">
+                Чай и Кофе
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Кондитерская
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Выпечка, хлебные изделия
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Сухофрукты
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Чипсы, семечки, сухари, орехи
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Для диабетиков
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Детское питание
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Бакалея
+            </a>
+            <a class="catalog-nav__el" href="./">
+
+                Японская кухня
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Овощи фрукты
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Молочная продукция
+            </a>
+            <a class="catalog-nav__el" href="./">
+                Мясная гастрономия
+            </a>
+        </div>
+        <%- include('../productsGrid/productsGrid', {
+            title: "",
+            cssClass: "new-products",
+            arrayItems: "newProducts",
+            maxCount: 8
+        }); %>
+
+    </div>
+    <div class="catalog-paginate">
+        <div class="catalog-paginate__control">
+            <img src="./img/icon-prev-page-gray.svg" alt="">
+        </div>
+        <div class="catalog-paginate__page">
+            ...
+        </div>
+        <div class="catalog-paginate__page">
+            2
+        </div>
+        <div class="catalog-paginate__page">
+            3
+        </div>
+        <div class="catalog-paginate__page">
+            4
+        </div>
+        <div class="catalog-paginate__page catalog-paginate__page_active">
+            5
+        </div>
+        <div class="catalog-paginate__page">
+            ...
+        </div>
+        <div class="catalog-paginate__control">
+            <img src="./img/icon-next-page-gray.svg" alt="">
+        </div>
+    </div>
+</div>

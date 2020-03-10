@@ -1,5 +1,7 @@
 <div class="products-grid <%=cssClass%>">
+    <% if (title.length) { %>
     <h2 class="products-grid__title"><%=title%></h2>
+    <% } %>
     <div class="products-grid__list">
         <% products[arrayItems].forEach(function(product, i){ %>
         <% if (maxCount > i) { %>
