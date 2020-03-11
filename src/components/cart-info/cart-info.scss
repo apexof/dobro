@@ -29,6 +29,7 @@
         font-size: 14px;
         line-height: 17px;
         color: #7B7B7B;
+        white-space: nowrap;
     }
 }
    
@@ -36,7 +37,24 @@
 
 }
 @media (min-width: 768px) {
-
+    .cart-info{
+        &_sticky{
+            background: #B2DB11;
+            padding: 14px;
+            .cart-info__logo{
+                img{
+                    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(18%) hue-rotate(324deg) brightness(106%) contrast(105%);
+                }
+            }
+            .cart-info__count{
+                background-color: #fff;
+                color: #7F8285;
+            }
+            .cart-info__text{
+                color: #000000;
+            }
+        }
+    }
 }
 @media (min-width: 992px) {
 
