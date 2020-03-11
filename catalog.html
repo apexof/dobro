@@ -61,7 +61,7 @@
                     Пн-Вс 8:00—20:00
                 </div>
             </div>
-            <a href="./" class="cart-info ">
+            <a href="./" class="cart-info">
     <div class="cart-info__logo">
         <img src="./img/header-cart-logo.svg" alt="">
     </div>
@@ -115,11 +115,11 @@
                 <img class="header__line-el" src="./img/header-connection-logo.svg" alt="">
             </a>
         </div>
-        <div class="header__line">
+        <div class="header__line header-sticky-mobile">
             <a class="header__logo" href="./">
                 <img src="./img/header-logo.svg" alt="">
             </a>
-            <a href="./" class="cart-info ">
+            <a href="./" class="cart-info">
     <div class="cart-info__logo">
         <img src="./img/header-cart-logo.svg" alt="">
     </div>
@@ -130,7 +130,44 @@
         Корзина пуста
     </div>
 </a>
+            <div class="burger-button" id="burger-button">
+    <img src="./img/icon-burger-gray.svg" alt="">
+</div>
+<div class="close-burger-button" id="close-burger-button">
+    <img src="./img/icon-close-gray.svg" alt="">
+</div>
         </div>
+        <div class="burger-menu" id="burger-menu">
+    <div class="burger-menu__content">
+        <nav class="burger-menu__nav">
+            <a href="./" class="burger-menu__el">Мой профиль</a>
+            <a href="./" class="burger-menu__el">Мои заказы</a>
+            <a href="./" class="burger-menu__el">Как сделать заказ</a>
+            <a href="./" class="burger-menu__el">Условия доставки</a>
+            <a href="./" class="burger-menu__el">Политика конфиденциальности</a>
+            <a href="./" class="burger-menu__el">Сравнение товаров</a>
+            <a href="./" class="burger-menu__el">Избранное</a>
+        </nav>
+        <footer class="burger-menu__footer">
+            <div class="header__schedule header__info-el">
+                <div class="header__schedule-logo">
+                    <img src="./img/header-clock-logo.svg" alt="">
+                </div>
+                <div class="header__schedule-text">
+                    Пн-Вс 8:00—20:00
+                </div>
+            </div>
+            <a class="header__tel header__info-el" href="tel:91-11-07">
+                <div class="header__tel-logo">
+                    <img src="./img/header-phone-logo.svg" alt="">
+                </div>
+                <span class="header__tel-number">
+                    91-11-07
+                </span>
+            </a>
+        </footer>
+    </div>
+</div>
     </div>
 </header>
             <div class="main-menu-grid">
@@ -297,11 +334,11 @@
                 <div class="catalog-filter-modal__triangle"></div>
                 <div class="catalog-filter-modal__input">
                     <label>Цена: от</label>
-                    <input type="number">
+                    <input type="number" class="input-no-arrows">
                 </div>
                 <div class="catalog-filter-modal__input">
                     <label>до</label>
-                    <input type="number">
+                    <input type="number" class="input-no-arrows">
                 </div>
                 <div class="catalog-filter-modal-footer">
                     <div class="catalog-filter-modal-footer__text">
