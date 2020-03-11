@@ -67,11 +67,13 @@
                 <img class="header__line-el" src="./img/header-connection-logo.svg" alt="">
             </a>
         </div>
-        <div class="header__line">
+        <div class="header__line header-sticky-mobile">
             <a class="header__logo" href="./">
                 <img src="./img/header-logo.svg" alt="">
             </a>
-            <%- include('../cart-info/cart-info', {cssClass: "header__info-el"}); %>
+            <%- include('../cart-info/cart-info'); %>
+            <%- include('../burger-menu/burger-button'); %>
         </div>
+        <%- include('../burger-menu/burger-menu'); %>
     </div>
 </header>

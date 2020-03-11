@@ -58,9 +58,27 @@
             display: block;
             cursor: pointer;
         }
-        &:last-child{
+        &.header-sticky-mobile{
             justify-content: space-between;
             padding: 16px $mobilePadding;
+            &_fixed{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                width: 100%;
+                padding: 8px $mobilePadding;
+                z-index: 100;
+                .header__logo{
+                    img{
+                        width: 92px;
+                    }
+                }
+            }
+            .cart-info {
+                margin: 0 15px 0 auto;
+            }
         }
         &:nth-child(2){
             justify-content: start;
@@ -146,7 +164,7 @@
         }
         .header__info{
             padding: 0;
-            border: 0;
+            border: 0;            
         }
     }
     .header {         
