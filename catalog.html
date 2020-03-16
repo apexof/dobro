@@ -170,7 +170,39 @@
 </div>
     </div>
 </header>
-            <div class="main-menu-grid">
+            <div class="breadcrumbs">
+    <div class="breadcrumbs__list">
+        
+        <div class="breadcrumbs__el">
+            <a href="./" class="breadcrumbs__el-link">
+                Главная страница
+            </a>
+        </div>
+        
+        <div class="breadcrumbs__el">
+            <a href="./" class="breadcrumbs__el-link">
+                Каталог товаров
+            </a>
+        </div>
+        
+    </div>
+</div>
+            <div class="catalog">
+    <div class="catalog__header">
+        <div class="catalog__title">
+            Каталог товаров
+        </div>
+        <div class="catalog-sort">
+            <label class="catalog__label">Сортировать:</label>
+            <div class="catalog-sort__select">
+                <select class="select2" name="catalog-sort">
+                    <option value="1">По популярности</option>
+                    <option value="2">По цене</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="main-menu-grid">
     <div class="main-menu">
     <div id="main-menu-button" class="main-menu__button">
         <div class="main-menu__text">
@@ -301,104 +333,150 @@
         
     </div>
 </div>
-            <div class="breadcrumbs">
-    <div class="breadcrumbs__list">
-        
-        <div class="breadcrumbs__el">
-            <a href="./" class="breadcrumbs__el-link">
-                Главная страница
-            </a>
-        </div>
-        
-        <div class="breadcrumbs__el">
-            <a href="./" class="breadcrumbs__el-link">
-                Каталог товаров
-            </a>
-        </div>
-        
-    </div>
-</div>
-            <div class="catalog">
-    <div class="catalog__header">
-        <div class="catalog__title">
-            Каталог товаров
-        </div>
-        <div class="catalog-filter">
-            <div class="catalog__label">
-                Фильтровать по:
-            </div>
-            <div class="catalog-filter__btn btn">
-                Цене
-            </div>
-            <div class="catalog-filter-modal">
-                <div class="catalog-filter-modal__triangle"></div>
-                <div class="catalog-filter-modal__input">
-                    <label>Цена: от</label>
-                    <input type="number" class="input-no-arrows">
-                </div>
-                <div class="catalog-filter-modal__input">
-                    <label>до</label>
-                    <input type="number" class="input-no-arrows">
-                </div>
-                <div class="catalog-filter-modal-footer">
-                    <div class="catalog-filter-modal-footer__text">
-                        Найдено: 145
-                    </div>
-                    <button class="catalog-filter-modal-footer__btn btn">
-                        Применить
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="catalog-sort">
-            <label class="catalog__label">Сортировать:</label>
-            <div class="catalog-sort__select">
-                <select class="select2" name="catalog-sort">
-                    <option value="1">По популярности</option>
-                    <option value="2">По цене</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <div class="catalog__content">
-        <div class="catalog-nav">
-            <a class="catalog-nav__el" href="./">
-                Чай и Кофе
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Кондитерская
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Выпечка, хлебные изделия
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Сухофрукты
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Чипсы, семечки, сухари, орехи
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Для диабетиков
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Детское питание
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Бакалея
-            </a>
-            <a class="catalog-nav__el" href="./">
 
-                Японская кухня
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Овощи фрукты
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Молочная продукция
-            </a>
-            <a class="catalog-nav__el" href="./">
-                Мясная гастрономия
-            </a>
+    <div class="catalog__content">
+        <div class="catalog-filter-box">
+            <div class="hide-filter-btn no-select" id="hide-filter-btn">
+                <div class="hide-filter-btn__text_show">
+                    Показать фильтр
+                </div>
+                <div class="hide-filter-btn__text_hide">
+                    Свернуть фильтр
+                </div>
+                <div class="hide-filter-btn__icon">
+                    <img src="./img/icon-hide-filter-black.svg" alt="">
+                </div>
+            </div>
+            <div class="catalog-filter" id="catalog-filter">
+                <div class="catalog-filter__block">
+                    <div class="catalog-filter__title">
+                        Цена:
+                    </div>
+                    <div class="catalog-filter__input-box">
+                        <div class="catalog-filter__input">
+                            <label> от</label>
+                            <input type="number" class="input-no-arrows">
+                        </div>
+                        <div class="catalog-filter__input">
+                            <label>до</label>
+                            <input type="number" class="input-no-arrows">
+                        </div>
+                    </div>
+
+                </div>                
+                <div class="catalog-filter__block">
+                    <div class="catalog-filter__title">
+                        кКал
+                    </div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Вариант 1
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Вариант 2
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Вариант 3
+                        </div>
+                    </label>
+                </div>
+                <div class="catalog-filter__block">
+                    <div class="catalog-filter__title">
+                        Услвоия хранения
+                    </div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Условие 1
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Условие 2
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Условие 3
+                        </div>
+                    </label>
+                </div>
+                <div class="catalog-filter__block">
+                    <div class="catalog-filter__title">
+                        Бренд
+                    </div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Бренд 1
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Бренд 2
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Бренд 3
+                        </div>
+                    </label>
+                </div>
+                <div class="catalog-filter__block">
+                    <div class="catalog-filter__title">
+                        Страна производитель
+                    </div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Страна 1
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Страна 2
+                        </div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="custom-checkbox__label">
+                            Страна 3
+                        </div>
+                    </label>
+                </div>
+                <div class="catalog-filter-footer">                    
+                    <button class="btn">
+                        Применить фильтр
+                    </button>
+                    <div class="catalog-filter-footer__text">
+                        Найдено: 145 товаров
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="products-grid new-products">
     
