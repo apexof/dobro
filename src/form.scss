@@ -79,10 +79,11 @@
     }
 }
 .custom-checkbox{
+    margin-bottom: 0;
     &__label{
         font-size: 14px;
         line-height: 20px;
-        color: #7B7B7B;
+        color: #7B7B7B;        
     }
     display: block;
     position: relative;
@@ -135,6 +136,30 @@
         height: 10px;
         border-radius: 4px;
         background: #B2DB11;
+    }
+}
+
+.check-select{
+    display: flex;
+    align-items: center;
+    .custom-checkbox{
+        margin-right: 15px;
+        &__label{
+            white-space: nowrap;
+        }
+    }
+    .select2-container{
+        .select2-selection--single{
+            height: 28px;
+        }   
+        &--default {
+            .select2-selection--single{
+                .select2-selection__rendered{
+                    line-height: 28px;
+                    font-weight: 300;
+                }
+            }
+        }
     }
 }
 

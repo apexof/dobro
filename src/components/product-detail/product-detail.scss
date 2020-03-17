@@ -122,6 +122,18 @@
             margin-bottom: 5px;
         }
     }
+    &__servicies{
+        padding: 10px;
+        background: #EEEEEE;
+        border-radius: 4px;
+        margin: 20px 0;
+        max-width: 325px;
+        .check-select{
+            &+.check-select{
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
 .product-about{
@@ -395,6 +407,10 @@
         }
         &__select{
             order: 4;
+        }
+        &__servicies{
+            order: 4;
+            margin-bottom: 0;
         }
         &__price{
             order: 5;

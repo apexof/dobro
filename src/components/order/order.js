@@ -1,8 +1,5 @@
-$(document).ready(() => {
-    $(".select2").select2(
-        {
-            minimumResultsForSearch: -1,
-            width: "100%"
-        }
-    );
+$("#select2-order-region").select2({
+    placeholder: "Выберите регион",
+    minimumResultsForSearch: -1,
+    width: "100%"
 });
