@@ -84,6 +84,11 @@
             color: #000000;
             opacity: 0.5;
         }
+        &__right{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
         &__del{
             height: 44px;
             width: 44px;
@@ -109,11 +114,108 @@
             margin-top: 15px;
         }
     }    
-}   
+}  
 
-@media (min-width: 576px) {
-
+.cart-coupon{
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    &-title{
+        display: flex;
+        &__icon{
+            img{
+                display: block;
+            }
+        }
+        &__text{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 17px;
+            color: #000000;
+            margin-left: 10px;
+        }
+    }
+    &-input{
+        margin: 10px 0;
+        input{
+            height: 44px;
+            border: 1px solid #C1C1C1;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            color: #000000;
+            padding: 13px 8px;
+            width: 100%;
+            max-width: 280px;
+            min-width: 180px;
+        }
+    }
+    &-discount{
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        &__text{
+            font-weight: 600;
+        }
+        &__num{
+            font-weight: normal;
+            margin-left: 20px;
+        }
+    }
 }
+.cart-points{
+    margin: 20px 0;
+    &__text{
+        font-size: 16px;
+        line-height: 22px;
+        color: #7B7B7B;
+        max-width: 255px;
+        &_bold{
+            font-weight: 600;
+            color: #000000;
+            &.separately{
+                display: none;
+            }
+        }
+    }
+    .btn_empty-grey{
+        margin-top: 10px;
+    }
+}
+.cart-benefit{
+    padding: 20px 0;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    &__title{
+        display: flex;
+        align-items: center;
+        img{
+            display: block;
+        }
+        span{
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            margin-left: 10px;
+        }
+    }
+    &__points{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        margin-top: 7px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 22px;
+        color: #7B7B7B;
+        max-width: 290px;
+    }
+}
+
 @media (min-width: 768px) {
     .cart{  
         &__head{
@@ -121,26 +223,9 @@
             justify-content: space-between;
             align-items: center;
         }
-        &__title{
-       
-        }
-        &__price{
-        
-    
-            &_text{
-    
-            }
-            &_summ{
-              
-            }
-        }
-        &__list{
-        }
         &-el{
             padding: 22px;
             height: 160px;
-            +.cart-el{
-            }
             &__img{
                 width: 115px;
                 flex-shrink: 0;
@@ -149,42 +234,40 @@
                 }
             }
             &__info{
-                position: relative;
                 padding-left: 20px;
                 width: 100%;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: space-between;
             }
-            &__name{
-      
+            &__right{
+                flex-wrap: wrap;
+                width: 30%;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-top: 0;
+            }
+            &__left{
+                width: 70%;
             }
             .rating-box{
-                &__stars{
-                    img{                    
-                        &+img{
-                        }
-                    }
-                }
-                &__count{
-                }
+                margin-bottom: 30px;
                 &__icon{
                     display: block;
                 }
             }
             &__price{
                 margin-top: auto;
-            }
-            &__old-price{
-            
-            }
-            &__del{
-                position: absolute;
-                right: 0;
-                bottom: 0;     
-                img{
-                }
+            }  
+            &__del{  
+                margin-left: 0;  
             }
         }
         &__btns{
-            padding-bottom: 15px;
+            padding: 15px 0;
+            margin: 0;
             border-bottom: 1px solid #EEEEEE;
             .btn{
                display: inline-flex;
@@ -193,14 +276,66 @@
                 margin: 0 0 0 15px;
             }
         }    
-    }   
-}
+    } 
+    .cart-coupon{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        padding: 15px 0;
+        &-title{
+            &__icon{
+ 
+            }
+            &__text{
 
-@media (min-width: 992px) {
-    .cart {
+            }
+        }
+        &-input{
+            margin: 0 60px 0 100px;
+            input{
+
+            }
+        }
+        &-discount{ 
+            &__text{
+            }
+            &__num{  
+                margin-left: 32px;      
+            }
+        }
+    } 
+    .cart-points{
+        display: flex;
+        margin: 15px 0;
+        &__text{
+            max-width: 390px;
+            &_bold{          
+                &.separately{
+                    display: block;
+                    margin: 0 55px 0 63px;
+                }
+            }
+        }
+        .btn_empty-grey{
+        }
     }
-}
-
-@media (min-width: 1200px) {
-
+    .cart-benefit{
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 0;
+        &__title{
+      
+            img{
+            }
+            span{
+      
+            }
+        }
+        &__points{
+            margin: 0 40px;
+        }
+        &__text{
+ 
+        }
+    } 
 }

@@ -13,12 +13,10 @@ $input.on("input", checkBuffer);
 $plus.on("click", () => {
     $input.val(+$input.val() + 1);
     checkBuffer();
-    $input.focus();
 });
 $minus.on("click", () => {
     if (+$input.val() > 0) {
         $input.val(+$input.val() - 1);
         checkBuffer();
-        $input.focus();
     }
 });

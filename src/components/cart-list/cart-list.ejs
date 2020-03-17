@@ -1,24 +1,24 @@
-<div class="container">
-    <div class="cart">
-        <div class="cart__head">
-            <div class="cart__title">
-                Корзина
-            </div>
-            <div class="cart__price">
-                <span class="cart__price_text">
-                    Товаров на сумму:
-                </span>
-                <span class="cart__price_summ">
-                    120 000 Р
-                </span>
-            </div>
+<div class="cart">
+    <div class="cart__head">
+        <div class="cart__title">
+            Корзина
         </div>
-        <div class="cart__list">
-            <div class="cart-el">
-                <div class="cart-el__img">
-                    <img src="./img/cart-el-1.jpg" alt="">
-                </div>
-                <div class="cart-el__info">
+        <div class="cart__price">
+            <span class="cart__price_text">
+                Товаров на сумму:
+            </span>
+            <span class="cart__price_summ">
+                120 000 Р
+            </span>
+        </div>
+    </div>
+    <div class="cart__list">
+        <div class="cart-el">
+            <div class="cart-el__img">
+                <img src="./img/cart-el-1.jpg" alt="">
+            </div>
+            <div class="cart-el__info">
+                <div class="cart-el__left">
                     <div class="cart-el__name">
                         Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт
                     </div>
@@ -33,12 +33,6 @@
                         <a href="./" class="rating-box__count">
                             1
                         </a>
-                        <a href="./" class="rating-box__icon heart">
-                            <img src="./img/header-heart-logo.svg" alt="">
-                        </a>
-                        <a href="./" class="rating-box__icon">
-                            <img src="./img/header-connection-logo.svg" alt="">
-                        </a>
                     </div>
                     <div class="cart-el__price">
                         109 Р
@@ -46,16 +40,22 @@
                     <div class="cart-el__old-price">
                         299 Р
                     </div>
+                </div>
+                <div class="cart-el__right">
+                    <%- include('../cart-counter/cart-counter'); %>
+
                     <div class="cart-el__del">
                         <img src="./img/cart-del-icon.svg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="cart-el">
-                <div class="cart-el__img">
-                    <img src="./img/cart-el-2.jpg" alt="">
-                </div>
-                <div class="cart-el__info">
+        </div>
+        <div class="cart-el">
+            <div class="cart-el__img">
+                <img src="./img/cart-el-1.jpg" alt="">
+            </div>
+            <div class="cart-el__info">
+                <div class="cart-el__left">
                     <div class="cart-el__name">
                         Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт
                     </div>
@@ -70,12 +70,6 @@
                         <a href="./" class="rating-box__count">
                             1
                         </a>
-                        <a href="./" class="rating-box__icon heart">
-                            <img src="./img/header-heart-logo.svg" alt="">
-                        </a>
-                        <a href="./" class="rating-box__icon">
-                            <img src="./img/header-connection-logo.svg" alt="">
-                        </a>
                     </div>
                     <div class="cart-el__price">
                         109 Р
@@ -83,19 +77,74 @@
                     <div class="cart-el__old-price">
                         299 Р
                     </div>
+                </div>
+                <div class="cart-el__right">
+                    <%- include('../cart-counter/cart-counter'); %>
+
                     <div class="cart-el__del">
                         <img src="./img/cart-del-icon.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cart__btns">
-            <a href="./" class="btn">
-                Перейти к оплате
-            </a>
-            <a href="./" class="btn btn_grey">
-                Вернуться назад
-            </a>
+    </div>
+    <div class="cart-coupon">
+        <div class="cart-coupon-title">
+            <div class="cart-coupon-title__icon">
+                <img src="./img/icon-percent-green.svg" alt="">
+            </div>
+            <div class="cart-coupon-title__text">
+                Код купона
+            </div>
         </div>
+        <div class="cart-coupon-input">
+            <input type="text">
+        </div>
+        <div class="cart-coupon-discount">
+            <span class="cart-coupon-discount__text">
+                Скидка
+            </span>
+            <span class="cart-coupon-discount__num">
+                1000 Р
+            </span>
+        </div>
+    </div>
+    <div class="cart-points">
+        <div class="cart-points__text">
+            Вы можете использовать свой партнерский бонусов
+            <span class="cart-points__text_bold">
+                55 баллов
+            </span>
+            для получения скидки на сумму
+            <span class="cart-points__text_bold">
+                55 руб
+            </span>
+        </div>
+        <div class="cart-points__text_bold separately">
+            55 р
+        </div>
+        <button class="btn btn_empty-grey">
+            Использовать баллы
+        </button>
+    </div>
+    <div class="cart-benefit">
+        <div class="cart-benefit__title">
+            <img src="./img/icon-thumb-green.svg" alt="">
+            <span>Этот заказ добавит:</span>
+        </div>
+        <div class="cart-benefit__points">
+            21 бонусный балл
+        </div>
+        <div class="cart-benefit__text">
+            который вы можете использовать для получения допольнительных скидок.
+        </div>
+    </div>
+    <div class="cart__btns">
+        <a href="./" class="btn">
+            Перейти к оплате
+        </a>
+        <a href="./" class="btn btn_grey">
+            Вернуться назад
+        </a>
     </div>
 </div>

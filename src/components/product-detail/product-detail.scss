@@ -4,12 +4,6 @@
         font-size: 24px;
         line-height: 29px;
         color: #000000;
-            &.mobile{
-                display: block;
-            }
-            &.desctop{
-                display: none;
-            }
     }
     &__weight{
         font-weight: 600;
@@ -25,6 +19,20 @@
                 display: none;
             }
     }
+    &__header{
+        &.mobile{
+            display: block;
+        }
+        &.desctop{
+            display: none;
+        }
+    }
+    &__availability{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #DCDCDC;
+    }
     &__pic{
         img{
             display: block;
@@ -37,7 +45,28 @@
         font-size: 34px;
         line-height: 41px;
         color: #000000;
-        margin: 10px 0;
+    }
+    &__old-price{
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: line-through;
+        color: #000000;
+        opacity: 0.5;
+    }
+    &__count-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        padding: 10px 0;   
+        margin: 10px 0 23px;     
+        .cart-counter__input{
+            input{
+                max-width: 136px;
+            }
+        }
     }
     .rating-box{
         align-items: flex-end;
@@ -64,9 +93,34 @@
         color: #7B7B7B;
     }
     .btn{
-        margin: 10px auto;
+        margin: 10px 0;
         max-width: 280px;
-        width: 100%;
+        width: 100%; 
+        white-space: nowrap;       
+    }
+    &__radio{
+        padding-bottom: 23px;
+        border-bottom: 1px solid #EEEEEE;
+        .custom-radio{
+            &__text{
+                font-weight: 500;
+            }
+            &__price{
+                font-weight: 700;
+                margin-left: 50px;
+            }
+        }
+    }
+    &__select{
+        max-width: 280px;
+        margin-top: 10px;
+        label{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            margin-bottom: 5px;
+        }
     }
 }
 
@@ -275,7 +329,7 @@
     .product-main-info{
         display: flex;
         max-width: 100%;
-        padding: 70px 0;
+        padding: 15px 0;
         border-bottom: 1px solid #EEEEEE;
         align-items: center;
         &__pic{
@@ -285,7 +339,12 @@
         &__title{
             font-size: 44px;
             line-height: 54px;
-            max-width: 455px;
+            max-width: 455px;            
+        }
+        hr{
+            display: none;
+        }
+        &__header{
             &.mobile{
                 display: none;
             }
@@ -295,13 +354,19 @@
         }
         &__weight{
             font-weight: 500;
-            margin: 15px 0 20px;
+            margin: 15px 0 10px;
             &.mobile{
                 display: none;
             }
             &.desctop{
                 display: block;
             }
+        }
+        &__count-box{
+            max-width: 300px;
+            border: 0;
+            padding: 0;  
+            order: 4;
         }
         &__right{
             width: 50%;
@@ -314,23 +379,36 @@
         }
         &__desc{
             max-width: 439px;
-            margin-bottom: 20px;
+            margin: 15px 0;
+            order: 3;
         }
         .rating-box{
             order: 4;
             width: 50%;
             max-width: 257px;
         }
+        &__radio{
+            order: 4;
+            padding-bottom: 0;
+            border: 0;
+            margin-bottom: 10px;
+        }
+        &__select{
+            order: 4;
+        }
         &__price{
             order: 5;
-            margin: 20px 0;
+            margin-top: 15px;
+        }
+        &__old-price{
+            order: 6;
         }
         .btn{
-            order: 6;
+            order: 7;
             max-width: 257px;
             width: 50%;
-            margin: 0 auto 0 0;
-        }
+            margin: 15px auto 0 0;
+        }        
     }
     .product-about{
         &__title{
@@ -348,36 +426,11 @@
         }
         &__table{
             padding-bottom: 15px;
-            border-bottom: 1px solid #EEEEEE;
-            table{  
-            }
-            tr{
-                &:nth-child(even){
-                }
-                &:first-child{
-                    td{
-                    }
-                }
-            }
-            td{     
-            }
-            &-td{
-                &_title{          
-                }
-                &_text{        
-                }
-            }
-            
+            border-bottom: 1px solid #EEEEEE;           
         }
         &__data{      
             &-el{    
-                margin-bottom: 0;
-                &-box{       
-                }
-                &-title{   
-                }
-                &-text{    
-                }
+                margin-bottom: 0;   
             }
         }
     }

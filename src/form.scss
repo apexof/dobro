@@ -1,9 +1,11 @@
 .custom-radio{
+    margin-bottom: 0;
     &__label{
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
         color: #000000;
+        opacity: 0.5;
     }
     display: block;
     position: relative;
@@ -12,18 +14,15 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;   
-
+    user-select: none;  
     + .custom-radio{
         margin-top: 12px;
-    }
-      
+    }      
     input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
-    }
-    
+    }    
     .checkmark {
         position: absolute;
         top: 0;
@@ -33,18 +32,18 @@
         background-color: #fff;
         border-radius: 50%;
         border: 1px solid rgba(0,0,0, .3);   
-    }   
-    
+    }       
     input:checked ~ .checkmark {
         border: 1px solid #B2DB11;  
-    }
-    
+    }    
     .checkmark:after {
         content: "";
         position: absolute;
         display: none;
     }
-
+    input:checked ~ .custom-radio__label{     
+        opacity: 1;                   
+    }
     input:checked ~ .checkmark:after {
         display: block;
     }
@@ -63,37 +62,19 @@
             font-size: 14px;
             line-height: 24px;
             color: #000000;
-            opacity: 0.5;
-        }
-        input:checked ~ .custom-radio__label{
-            color: #000000;
-            opacity: 1;            
-        }
-        + .custom-radio{
-        }
-          
-        input {
-        }
+        }   
         
         .checkmark {  
             border: 0;
             width: 24px;
             height: 24px;
-        }   
-        
+        }           
         input:checked ~ .checkmark {
             background-color: #B2DB11;
-        }
-        
-        .checkmark:after {     
-        }
-    
+        }  
         input:checked ~ .checkmark:after {
             position: absolute;
             background: url("./img/arrow-checkmark.svg");
-        }
-
-        .checkmark:after {
         }
     }
 }
@@ -160,7 +141,7 @@
 .select2-container{
     .select2-selection--single{
         height: 44px;
-    }    
+    }   
     &--default {
         .select2-selection--single{
             border: 1px solid #C1C1C1;
@@ -231,13 +212,37 @@ button {
     border-radius: 4px;
     background: #B2DB11;
     text-decoration: none;
+    width: 100%;
+    max-width: 280px;
     &:hover {
         background: #A3C715;
+        color: #FFFFFF;
+    }
+    &:active{
+        color: #7B7B7B;
+        background: #EEEEEE;
     }
     &_grey{
         background: #C1C1C1;
+        color: #FFFFFF;
         &:hover {
+            color: #FFFFFF;
             background: darken(#C1C1C1, 10%);
+        }
+        &:active{
+            background: darken(#C1C1C1, 20%);
+        }
+    }
+    &_empty-grey{
+        background: transparent;
+        border: 1px solid #C1C1C1;
+        color: #7B7B7B;
+        &:hover {
+            background: #EEEEEE;
+            color: #000000;
+        }
+        &:active{
+            color: #7B7B7B;
         }
     }
 }  
