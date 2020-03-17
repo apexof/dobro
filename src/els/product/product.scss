@@ -1,14 +1,36 @@
 .product{
     padding: 10px 10px;
     border: 1px solid #E4E4E4;
-    // max-width: 140px;
-    // min-width: 140px;    
     height: 226px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative; 
     &-box{
         width: 50%;
+    }
+    &__mark{
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-transform: uppercase;
+        &_hit{
+            background: #E00000;
+        }
+        &_sale{
+            background: #F7DF14;
+            color: #000000;
+        }
+        &_new{
+            background: #B2DB11;
+        }
     }
     &__img{
         width: 100%;
@@ -112,6 +134,10 @@
             margin-bottom: 20px;
             width: 33.33%;
             padding: 0 10px;
+        }
+        &__mark{
+            top: 20px;
+            left: 20px;
         }
         &__img{
             img{   

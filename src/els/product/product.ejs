@@ -1,5 +1,10 @@
 <div class="product-box">
     <div class="product">
+        <% if (mark) { %>
+        <div class="product__mark product__mark_<%=mark%>">
+            <%=markText%>
+        </div>
+        <% } %>
         <div class="product__img">
             <%- include('../img', {src: img, cx: "img-box" }); %>
         </div>

@@ -7,7 +7,9 @@ module.exports = {
             inStock: true,
             rating: 5,
             img: "newProduct-1",
-            weight: "200гр/16шт"
+            weight: "200гр/16шт",
+            mark: "hit",
+            markText: "xит"
         },
         {
             name: "Ролл Цезарь курица",
@@ -16,7 +18,9 @@ module.exports = {
             inStock: false,
             rating: 5,
             img: "newProduct-2",
-            weight: "210г"
+            weight: "210г",
+            mark: "new",
+            markText: "new"
         },
         {
             name: "Халва АЗОВСКАЯ подсол изюм",
@@ -25,7 +29,9 @@ module.exports = {
             inStock: true,
             rating: 5,
             img: "newProduct-3",
-            weight: "5,6кг шт 16шт"
+            weight: "5,6кг шт 16шт",
+            mark: "sale",
+            markText: "sale"
         },
         {
             name: "Вафли КОРОВКА топл молоко",
