@@ -3550,10 +3550,38 @@ h2 {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 
 .product-box {
   width: 50%;
+}
+
+.product__mark {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-transform: uppercase;
+}
+
+.product__mark_hit {
+  background: #E00000;
+}
+
+.product__mark_sale {
+  background: #F7DF14;
+  color: #000000;
+}
+
+.product__mark_new {
+  background: #B2DB11;
 }
 
 .product__img {
@@ -3677,6 +3705,11 @@ h2 {
     margin-bottom: 20px;
     width: 33.33%;
     padding: 0 10px;
+  }
+
+  .product__mark {
+    top: 20px;
+    left: 20px;
   }
 
   .product__img img {
