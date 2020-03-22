@@ -1,0 +1,62 @@
+.cart{  
+    &__head{
+    }
+    &__title{
+    }
+    &__price{
+        &_text{
+        }
+        &_summ{      
+        }
+    }
+    &__list{
+    }
+    &-el{  
+        +.cart-el{
+        }
+        &__img{
+            img{
+            }
+        }
+        &__info{
+        }
+        &__name{
+        }
+        .rating-box{
+            &__stars{
+                img{             
+                    &+img{
+                    }
+                }
+            }
+            &__count{
+            }
+            &__icon{
+            }
+        }
+        &__price{
+        }
+        &__old-price{
+        }
+        &__right{
+        }
+        .check-select{
+        }
+        &__del{
+            img{
+            }
+        }
+    }
+    &__btns{
+        .btn{
+        }
+        .btn+.btn{
+        }
+    }    
+}  
+
+@media (min-width: 768px) {
+    .cart{  
+       
+    } 
+}
