@@ -123,52 +123,11 @@
                 </div>
             </div>
             <div class="cart-el__bottom">
-                <div class="cart-el__controls">
+                <div class="cart-el__controls cart-el__controls_column">
                     <%- include('../cart-counter/cart-counter'); %>
 
                     <div class="cart-el__del">
                         <img src="./img/cart-del-icon.svg" alt="">
-                    </div>
-                </div>
-                <div class="cart-el__service">
-                    <div class="check-select">
-                        <label class="custom-checkbox">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <div class="custom-checkbox__label">
-                                Доп услуга 1
-                            </div>
-                        </label>
-                        <select class="select2 check-select__select2 small-select" name="service1">
-                            <option value="1">Услуга 1</option>
-                            <option value="2">Услуга 2</option>
-                        </select>
-                    </div>
-                    <div class="check-select">
-                        <label class="custom-checkbox">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <div class="custom-checkbox__label">
-                                Доп услуга 1
-                            </div>
-                        </label>
-                        <select class="select2 check-select__select2 small-select" name="service1">
-                            <option value="1">Услуга 1</option>
-                            <option value="2">Услуга 2</option>
-                        </select>
-                    </div>
-                    <div class="check-select">
-                        <label class="custom-checkbox">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <div class="custom-checkbox__label">
-                                Доп услуга 1
-                            </div>
-                        </label>
-                        <select class="select2 check-select__select2 small-select" name="service1">
-                            <option value="1">Услуга 1</option>
-                            <option value="2">Услуга 2</option>
-                        </select>
                     </div>
                 </div>
             </div>
@@ -296,7 +255,7 @@
             flex-wrap: wrap;
             order: 1;
             width: calc(100% + 20px);
-            margin: -10px -10px 5px -10px;
+            margin: -10px -10px auto -10px;
             flex-direction: row-reverse;
         }
 
@@ -308,9 +267,15 @@
 
         .cart .cart-el .cart-el__controls {
             width: 100%;
-            margin: auto 0 0 0;
+            margin: 0;
             order: 2;
             justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .cart .cart-el .cart-el__controls_column {
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .cart .cart-el .cart-el__del {
