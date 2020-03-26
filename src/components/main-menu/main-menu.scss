@@ -246,7 +246,9 @@
             background: #FFFFFF;
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 0px 5px 5px 0px;  
-            max-width: 800px;  
+            overflow-y: auto; 
+            max-height: 412px;
+            max-width: 530px;  
             &__box{
                 display: none;
                 position: absolute;
@@ -257,9 +259,7 @@
                     display: block;
                 }
             }
-            &-el{     
-                width: 33%;   
-                min-width: 264px;           
+            &-el{                              
                 padding: 0 20px;            
                 cursor: pointer;
                 height: 32px;                
@@ -277,7 +277,9 @@
                 }
             }
             &__section{
-                border: 0;                
+                width: 50%;                  
+                border: 0;  
+                min-width: 255px;               
             } 
         }
         &-sub-menu2{
@@ -301,8 +303,23 @@
     }
 }
 @media (min-width: 992px) {
-
+    // .main-menu{
+    //     &-sub-menu{
+    //         max-width: 528px;
+    //         &__section{    
+    //             width: 50%;  
+    //         }
+    //     }
+    // }
 }
 @media (min-width: 1200px) {
-
+    .main-menu{
+        &-sub-menu{
+            max-width: 800px;
+            &__section{
+                width: 33%;                  
+                border: 0;                
+            } 
+        }
+    }
 }
