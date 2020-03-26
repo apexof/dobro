@@ -8,7 +8,7 @@ $("#main-menu-button").click(() => {
 btn.click(function (e) {
     e.preventDefault();
     $(this).toggleClass("main-menu-plus_close");
-    $(this).parent().next(".main-menu-sub-menu").slideToggle("fast");
+    $(this).parent().next(".main-menu-sub-menu__box").slideToggle("fast");
 });
 
 subBtn.click(function () {

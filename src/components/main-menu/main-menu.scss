@@ -77,7 +77,6 @@
         }
     }   
     &-sub-menu{
-        display: none;
         &__section{
             border-bottom: 1px solid #b5d244;
             &:last-child{
@@ -107,6 +106,9 @@
                 background: #89ab02; 
             }
         } 
+        &__box{
+        display: none;
+        }
     }
     &-sub-menu2{
         display: none;
@@ -250,9 +252,7 @@
                 position: absolute;
                 top: -1px;
                 left: 273px;
-                z-index: 3;
                 width: 1000px;
-                // background-color: red;
                 &:hover{
                     display: block;
                 }
@@ -271,7 +271,7 @@
                     line-height: 32px;  
                 }
                 &:hover{                
-                    background: rgba(247,223,20,.4);  
+                    background-color: rgba(193,193,193, .3);  
                     color: #000000;
                     font-weight: 500;              
                 }
