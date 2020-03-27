@@ -2382,6 +2382,8 @@ h2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main-menu-el__arrow {
@@ -2572,8 +2574,6 @@ h2 {
     max-width: 100%;
     width: 100%;
     margin-right: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .main-menu-el__arrow {
