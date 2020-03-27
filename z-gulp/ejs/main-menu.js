@@ -1,11 +1,11 @@
 module.exports = [
     {
-        text: "Чай и Кофе",
+        text: "Чай и Кофе dfgdf gdfg ",
         subMenu: [
             {
-                text: "Чай и Кофе",
+                text: "Чай и Кофе sdf dfsd fsdf sd fsdf sdf  dfg dfgd",
                 subMenu2: [
-                    { text: "Чай и Кофе" },
+                    { text: "Чай и Кофе df gdfg df d dfd dfgdfg dfg " },
                     { text: "Кондитерская" }
                 ]
             },

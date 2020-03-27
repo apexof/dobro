@@ -94,6 +94,8 @@
                 line-height: 40px;
                 color: #FFFFFF;
                 white-space: nowrap; 
+                text-overflow: ellipsis;
+                overflow: hidden;
             }            
             .main-menu-plus{
                 margin-right: 0;
@@ -112,22 +114,27 @@
     }
     &-sub-menu2{
         display: none;
-        &__el{
-            font-size: 14px;
-            line-height: 40px;
-            color: #FFFFFF;
-            text-decoration: none;  
-            white-space: nowrap;  
+        &-el{            
+            text-decoration: none;              
             height: 40px;
             background: #82a202;
             display: block;
             padding-left: #{$mobilePadding * 5};
+            padding-right: $mobilePadding;
             border-bottom: 1px solid rgba(255, 255, 255, .3);
             &:hover{
                 color: #FFFFFF;
             }
             &:last-child{
                 border: 0;
+            }
+            &__text{
+                white-space: nowrap;  
+                font-size: 14px;
+                line-height: 40px;
+                color: #FFFFFF;
+                text-overflow: ellipsis;
+                overflow: hidden;
             }
         }
     }
@@ -221,7 +228,6 @@
                 line-height: 18px;
                 font-weight: normal;
                 color: rgba(0, 0, 0, 0.8);
-                // max-width: 200px;
                 max-width: 100%;
                 width: 100%;
                 margin-right: 10px;
@@ -248,7 +254,7 @@
             border-radius: 0px 5px 5px 0px;  
             overflow-y: auto; 
             max-height: 412px;
-            max-width: 530px;  
+            max-width: 460px;  
             &__box{
                 display: none;
                 position: absolute;
@@ -260,15 +266,15 @@
                 }
             }
             &-el{                              
-                padding: 0 20px;            
-                cursor: pointer;
+                padding: 0 15px 0 20px;           
                 height: 32px;                
                 background-color: #fff;
                 &__text{
+                    cursor: pointer;
                     font-weight: 600;
                     font-size: 16px; 
                     color: rgba(0,0,0, .8);  
-                    line-height: 32px;  
+                    line-height: 32px;                    
                 }
                 &:hover{                
                     background-color: rgba(193,193,193, .3);  
@@ -279,21 +285,24 @@
             &__section{
                 width: 50%;                  
                 border: 0;  
-                min-width: 255px;               
+                min-width: 220px;               
             } 
         }
         &-sub-menu2{
             display: block;            
-            &__el{
-                font-size: 14px;
-                line-height: 32px;
-                color: rgba(0, 0, 0, 0.8);
+            &-el{ 
                 background: #FFFFFF;
-                padding-left: 20px;
+                padding: 0 15px 0 20px;
                 height: 32px;
+                display: flex;                
                 &:hover{
                     color: rgba(0, 0, 0, 0.8);
                     background-color: rgba(193,193,193, .3);
+                }
+                &__text{                  
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: rgba(0, 0, 0, 0.8);
                 }
             }
         }
@@ -303,14 +312,14 @@
     }
 }
 @media (min-width: 992px) {
-    // .main-menu{
-    //     &-sub-menu{
-    //         max-width: 528px;
-    //         &__section{    
-    //             width: 50%;  
-    //         }
-    //     }
-    // }
+    .main-menu{
+        &-sub-menu{
+            max-width: 530px;  
+            &__section{
+                min-width: 255px;   
+            } 
+        }
+    }
 }
 @media (min-width: 1200px) {
     .main-menu{

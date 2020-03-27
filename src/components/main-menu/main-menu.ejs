@@ -14,7 +14,7 @@
                 <div class="main-menu-el__icon">
                     <img src="./img/main-menu-icon-<%=i+1%>.svg" alt="">
                 </div>
-                <div class="main-menu-el__text">
+                <div class="main-menu-el__text" title="<%=el.text%>">
                     <%=el.text%>
                 </div>
                 <% if (el.subMenu) { %>
@@ -31,13 +31,11 @@
             </a>
             <% if (el.subMenu) { %>
             <div class="main-menu-sub-menu__box">
-                <div class="main-menu-sub-menu grid">
+                <div class="main-menu-sub-menu">
                     <% el.subMenu.forEach(function(subEl, i){ %>
-                    <div class="main-menu-sub-menu__section grid-item">
+                    <div class="main-menu-sub-menu__section">
                         <a class="main-menu-sub-menu-el" href="./">
-                            <div class="main-menu-sub-menu-el__text">
-                                <%=subEl.text%>
-                            </div>
+                            <div class="main-menu-sub-menu-el__text" title="<%=subEl.text%>"><%=subEl.text%></div>
                             <% if (subEl.subMenu2) { %>
                             <div class="main-menu-plus main-menu-plus_close">
                                 <img class="btn-plus" src="./img/icon-menu-plus-white.svg" alt="">
@@ -48,8 +46,10 @@
                         <% if (subEl.subMenu2) { %>
                         <div class="main-menu-sub-menu2">
                             <% subEl.subMenu2.forEach(function(subEl2, i){ %>
-                            <a class="main-menu-sub-menu2__el" href="./">
-                                <%=subEl2.text%>
+                            <a class="main-menu-sub-menu2-el" href="./">
+                                <div class="main-menu-sub-menu2-el__text" title="<%=subEl2.text%>">
+                                    <%=subEl2.text%>
+                                </div>
                             </a>
                             <% }); %>
                         </div>
