@@ -3988,12 +3988,17 @@ h2 {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .product__price-cart img {
   margin-right: 4px;
   width: 18px;
   height: 18px;
+}
+
+.product__price-cart:hover {
+  background: #A3C715;
 }
 
 @media (min-width: 460px) {
