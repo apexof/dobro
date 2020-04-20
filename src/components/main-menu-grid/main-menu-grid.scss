@@ -89,6 +89,8 @@
 }
 @media (min-width: 768px) {
     .main-menu-grid{
+        padding: 0 0 30px;
+        border-bottom: 1px solid #EEEEEE;
         flex-direction: row;
         align-items: flex-start;  
         &__right {

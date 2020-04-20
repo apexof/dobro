@@ -46,25 +46,23 @@
 }
 @media (min-width: 768px) {
     .cat-menu {
-        padding: 0 0 30px;
-        border-bottom: 1px solid #EEEEEE;
         margin-left: 0;
         margin-right: 0;
         &__list{
             flex-wrap: wrap;
-            margin: 0 -10px;
+            margin: 0 -10px 20px -10px;
             &-el{
-                width: 16.666%;
+                width: 25%;
                 flex-shrink: unset;
                 padding: 0 10px;
-                margin-bottom: 37px;
+                margin-bottom: 20px;
                 &:first-child{
                     padding-left: 10px;
-                    width: 16.666%;
+                    width: 25%;
                 }
                 &:last-child{
                     padding-right: 10px;
-                    width: 16.666%;
+                    width: 25%;
                 }
                 &-img{
                     border: 1px solid #EEEEEE;
@@ -81,14 +79,31 @@
                 }
             }
         }
-        .btn{
+        &__show-all{
             margin: -17px auto 0;
-            display: block;
+            display: flex;
+            justify-content: center;
+            .btn{
+                display: block;
+                margin-left: -290px;
+            }
         }
     }
 }
 @media (min-width: 992px) {
-
+    .cat-menu {
+        &__list{  
+            &-el{
+                width: 20%;     
+                &:first-child{
+                    width: 20%;
+                }
+                &:last-child{
+                    width: 20%;
+                }
+            }
+        }
+    }
 }
 @media (min-width: 1200px) {
 
