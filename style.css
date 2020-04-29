@@ -305,6 +305,12 @@ button:focus {
 .btn_empty-grey:active {
   color: #7B7B7B;
 }
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 @font-face {
   font-family: "Proxima Nova";
   font-style: normal;
