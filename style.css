@@ -4016,10 +4016,10 @@ h2 {
 }
 
 .product__price-cart img {
-  margin: 0 auto;
   width: 18px;
   width: 18px;
   display: block;
+  margin-left: 5px;
 }
 
 .product__price-cart:hover {
@@ -4097,7 +4097,7 @@ h2 {
   }
 
   .product__price-cart img {
-    margin-left: 1px;
+    margin-left: 7px;
     width: 24px;
     height: 24px;
   }
