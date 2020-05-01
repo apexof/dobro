@@ -4025,6 +4025,7 @@ h2 {
   margin-right: 4px;
   width: 18px;
   height: 18px;
+  display: block;
 }
 
 .product__price-cart:hover {
