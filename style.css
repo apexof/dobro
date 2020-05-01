@@ -4014,11 +4014,9 @@ h2 {
 }
 
 .product__price-cart img {
-  margin-right: 4px;
+  margin: 0 auto;
   width: 18px;
   width: 18px;
-  min-height: 18px;
-  min-height: 18px;
   display: block;
 }
 
