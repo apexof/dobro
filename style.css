@@ -234,6 +234,7 @@ button {
   border: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 button:focus {
@@ -4009,15 +4010,6 @@ h2 {
   height: 32px;
   background: #B2DB11;
   border-radius: 4px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   cursor: pointer;
 }
 
