@@ -4008,8 +4008,8 @@ h2 {
 .product__price-cart {
   width: 32px;
   height: 32px;
-  background: #B2DB11;
   border-radius: 4px;
+  background: #B2DB11;
   cursor: pointer;
 }
 
