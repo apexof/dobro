@@ -4011,6 +4011,8 @@ h2 {
   border-radius: 4px;
   background: #B2DB11;
   cursor: pointer;
+  display: block;
+  padding: 0;
 }
 
 .product__price-cart img {
