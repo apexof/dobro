@@ -17,8 +17,8 @@
             <div class="cart-el__img">
                 <img src="./img/cart-el-1.jpg" alt="">
             </div>
-            <div class="cart-el__info">
-                <div class="cart-el__left">
+            <div class="cart-el__right">
+                <div class="cart-el__info">
                     <div class="cart-el__name">
                         Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт
                     </div>
@@ -34,6 +34,8 @@
                             1
                         </a>
                     </div>
+                </div>
+                <div class="cart-el__prices">
                     <div class="cart-el__price">
                         109 Р
                     </div>
@@ -41,54 +43,11 @@
                         299 Р
                     </div>
                 </div>
-            </div>
-            <div class="cart-el__bottom">
-                <div class="cart-el__controls">
+                <div class="cart-el__bottom">
                     <%- include('../cart-counter/cart-counter'); %>
 
                     <div class="cart-el__del">
                         <img src="./img/cart-del-icon.svg" alt="">
-                    </div>
-                </div>
-                <div class="cart-el__service">
-                    <div class="check-select">
-                        <label class="custom-checkbox">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <div class="custom-checkbox__label">
-                                Доп услуга 1
-                            </div>
-                        </label>
-                        <select class="select2 check-select__select2 small-select" name="service1">
-                            <option value="1">Услуга 1</option>
-                            <option value="2">Услуга 2</option>
-                        </select>
-                    </div>
-                    <div class="check-select">
-                        <label class="custom-checkbox">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <div class="custom-checkbox__label">
-                                Доп услуга 1
-                            </div>
-                        </label>
-                        <select class="select2 check-select__select2 small-select" name="service1">
-                            <option value="1">Услуга 1</option>
-                            <option value="2">Услуга 2</option>
-                        </select>
-                    </div>
-                    <div class="check-select">
-                        <label class="custom-checkbox">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                            <div class="custom-checkbox__label">
-                                Доп услуга 1
-                            </div>
-                        </label>
-                        <select class="select2 check-select__select2 small-select" name="service1">
-                            <option value="1">Услуга 1</option>
-                            <option value="2">Услуга 2</option>
-                        </select>
                     </div>
                 </div>
             </div>
@@ -97,8 +56,8 @@
             <div class="cart-el__img">
                 <img src="./img/cart-el-3.jpg" alt="">
             </div>
-            <div class="cart-el__info">
-                <div class="cart-el__left">
+            <div class="cart-el__right">
+                <div class="cart-el__info">
                     <div class="cart-el__name">
                         Халва АЗОВСКАЯ подсол изюм 5,6кг шт 16шт
                     </div>
@@ -114,6 +73,8 @@
                             1
                         </a>
                     </div>
+                </div>
+                <div class="cart-el__prices">
                     <div class="cart-el__price">
                         109 Р
                     </div>
@@ -121,9 +82,7 @@
                         299 Р
                     </div>
                 </div>
-            </div>
-            <div class="cart-el__bottom">
-                <div class="cart-el__controls cart-el__controls_column">
+                <div class="cart-el__bottom">
                     <%- include('../cart-counter/cart-counter'); %>
 
                     <div class="cart-el__del">
@@ -193,95 +152,3 @@
         </a>
     </div>
 </div>
-<style>
-    .cart .cart-el {
-        flex-wrap: wrap;
-    }
-
-    .cart-el__img img {
-        max-width: 100%;
-    }
-
-    .cart .cart-el .cart-el__bottom {
-        width: 100%;
-    }
-
-    .cart .cart-el .cart-el__controls {
-        display: flex;
-        justify-content: space-between;
-        width: 66.66%;
-        margin-left: auto;
-    }
-
-    .cart .cart-el .check-select {
-        display: flex;
-        max-width: 300px;
-        flex-wrap: wrap;
-        flex-shrink: 0;
-        margin-top: 10px;
-    }
-
-    .cart .cart-el .check-select .custom-checkbox {
-        margin-bottom: 13px;
-    }
-
-    .cart .cart-el .cart-el__service {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    @media (min-width: 768px) {
-        .cart .cart-el {
-            flex-wrap: nowrap;
-            height: auto;
-        }
-
-        .cart .cart-el .cart-el__bottom {
-            width: 50%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .cart .cart-el .cart-el__info {
-            width: 35%;
-        }
-
-        .cart .cart-el .cart-el__img {
-            width: 15%;
-            display: flex;
-            align-items: center;
-        }
-
-        .cart .cart-el .cart-el__service {
-            display: flex;
-            flex-wrap: wrap;
-            order: 1;
-            width: calc(100% + 20px);
-            margin: -10px -10px auto -10px;
-            flex-direction: row-reverse;
-        }
-
-        .cart .cart-el .check-select {
-            margin: 10px;
-            width: 160px;
-            max-width: 160px;
-        }
-
-        .cart .cart-el .cart-el__controls {
-            width: 100%;
-            margin: 0;
-            order: 2;
-            justify-content: flex-end;
-            align-items: flex-end;
-        }
-
-        .cart .cart-el .cart-el__controls_column {
-            justify-content: space-between;
-            flex-direction: column;
-        }
-
-        .cart .cart-el .cart-el__del {
-            margin: 0 0 0 53px;
-        }
-    }
-</style>
